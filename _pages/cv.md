@@ -1,64 +1,78 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
+You can download a densified pdf version of my CV [here (updated May 24)](../files/CV_KueteMeli.pdf).
+
 {% include base_path %}
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* 2021–2024. 
+**Dr. rer nat.** (summa cum laude) in *Computational Life Science*, University of Luebeck, Germany.
+
+  * Quantum Algorithms for Binary Problems with Applications to Image Processing.
+  * Variational quantum circuits • QUBO/Ising models • Quantum annealing.
+
+* 2018–2021.
+**M.Sc.** (with distinction) in *Computational Life Science*, University of Luebeck, Germany.
+  
+  * Trainable Detection Methods for Industrial Materials Testing.
+  * Object detection • image segmentation • deep learning • R-CNN • U-Net.
+
+* 2012–2015
+**B.Sc.** (12,96/20) in *Mathematics and Computer Science*, University of Dschang, Cameroon.
+
+  * Backend Programming of a real estate web application in Java EE.
+  * Jave EE • HTML • PHP • UML.
+
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Spring 2024: Research Assistant
+  * University of Siegen
+  * Duties includes: Scientific research and publication, Teaching, Co-superstition of student thesis.
+  * Supervisor: Prof. Dr. Michael Möller
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2021 - 2024: Research Assistant
+  * University of Luebeck
+  * Duties includes: Scientific research and publication, Teaching, Co-superstition of student thesis.
+  * Supervisor: Prof. Dr. Jan Lellmann
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* 2019 - 2021: Student Assistant
+  * International Office of the University of Lübeck
+  * Duties included: Database maintenance, Follow up of Erasmus applications.
+  * Supervisor: Karolin Saenger
+
+
+Reviewer Activities
+======
+- **QDSM 2023** International workshop on quantum data science and management.
+
+- **SSVM 2023** International conference on scale space and variational methods in
+computer vision.
+
+- **CVPR 2023** IEEE/CVF conference on computer vision and pattern recognition.
+
+- **BVM 2021** Bilbverarbeitung für die Medizin.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Oral presentations
+* Academic wiring
+* Team work
+* Programming
+  * Python
+  * MatLab
 
-Publications
+
+Languages
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* French (Mother tongue)
+* German (C1)
+* English (Good)

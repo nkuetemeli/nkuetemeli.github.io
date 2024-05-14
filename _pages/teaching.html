@@ -7,6 +7,18 @@ author_profile: true
 
 {% include base_path %}
 
+<hr>
+<h2>Co-Supervisor for student thesis</h2>
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.path contains 'supervisor' %}
+     {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+
+<hr>
+<h2>Teaching assistant</h2>
+
+{% for post in site.teaching reversed %}
+     {% include archive-single.html %}
 {% endfor %}
