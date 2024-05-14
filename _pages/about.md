@@ -28,4 +28,4 @@ News
 
 - 28.2.2022. Our paper [An Iterative Quantum Approach for Transformation Estimation from Point Sets](https://doi.org/10.1109/CVPR52688.2022.00061) got accepted at CVPR22.
 
-- 1.4.2021. I started as PhD student at the University of Luebeck in the ["Institute of Mathematics and Image Computing"](https://www.mic.uni-luebeck.de/about-us).
+- 1.4.2021. I started as a PhD student at the University of Luebeck in the ["Institute of Mathematics and Image Computing"](https://www.mic.uni-luebeck.de/about-us).
