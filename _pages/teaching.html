@@ -20,5 +20,8 @@ author_profile: true
 <h2>Teaching assistant</h2>
 
 {% for post in site.teaching reversed %}
+  {% if post.path contains 'supervisor' %}
+  {% else %}
      {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
