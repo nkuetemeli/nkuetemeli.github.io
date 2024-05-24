@@ -7,8 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-Since April 2024, I have held a position as a research assistant for quantum computer vision at the University of Siegen (Germany) in the ["Computer Vision Group"](https://www.vsa.informatik.uni-siegen.de) of  [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/).
-I received my PhD on quantum algorithms for image processing and my Master in computer life science from the University of Luebeck, both under the supervision of [Prof. Dr. Jan Lellmann](https://www.lellmann.net/work/).
+Since April 2024, I have held a position as a research assistant for quantum computer vision at the University of Siegen in the [Computer Vision Group](https://www.vsa.informatik.uni-siegen.de) of [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/), and I am co-supervised by [Dr. Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/), head of the [4D and Quantum Computer Vision Group](https://4dqv.mpi-inf.mpg.de) at Max Planck Institute for Informatics.
+I received my PhD on quantum algorithms for image processing and my Master in computertional life science from the University of Luebeck, both under the supervision of [Prof. Dr. Jan Lellmann](https://www.lellmann.net/work/).
 I received my Bachelor in computer science from the University of Dschang, under the supervision of [Dr. Maurice Tchoupe Tchendji](https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji).
 
 I specialize in quantum computing’s applications to image processing and computer vision. 
@@ -18,7 +18,7 @@ Quantum computing offers a powerful solution to overcome challenges posed by non
 
 News
 ======
-- 29.4.2024. I started as a Research Assistant at the University of Siegen in the ["Computer Vision Group"](https://www.vsa.informatik.uni-siegen.de) lead by [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/).
+- 29.4.2024. I started as a Research Assistant at the University of Siegen in the [Computer Vision Group](https://www.vsa.informatik.uni-siegen.de) lead by [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/), and I am co-supervised by [Dr. Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/), head of the [4D and Quantum Computer Vision Group](https://4dqv.mpi-inf.mpg.de) at Max Planck Institute for Informatics.
 
 - 23.4.2024. I successfully defended my PhD dissertation titled **Quantum Algorithms for Binary Problems with Applications to Image Processing**, supervised by [Prof. Dr. Jan Lellmann](https://www.lellmann.net/work/). [Slides](#)
 
