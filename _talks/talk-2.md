@@ -9,5 +9,5 @@ location: "University of Luebeck, Germany"
 ---
 
 **Talk summary**
-> Talk for my Ph.D. thesis defense.
+> ![image](../files/Defense_KueteMeli.jpg) Talk for my Ph.D. thesis defense.
 [[Slides]](../files/qc_defense_KueteMeli.pdf)[[Dissertation]](../files/Dissertation_KueteMeli.pdf)
