@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<p style='text-align: justify;'>
+
 Since April 2024, I have held a position as a research assistant for quantum computer vision at the University of Siegen in the [Computer Vision Group](https://www.vsa.informatik.uni-siegen.de) of [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/), and I am co-supervised by [Dr. Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/), head of the [4D and Quantum Computer Vision Group](https://4dqv.mpi-inf.mpg.de) at Max Planck Institute for Informatics.
 I received my PhD on quantum algorithms for image processing and my Master in computational life science from the University of Luebeck, both under the supervision of [Prof. Dr. Jan Lellmann](https://www.lellmann.net/work/).
 I received my Bachelor in computer science from the University of Dschang, under the supervision of [Dr. Maurice Tchoupe Tchendji](https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji).
@@ -31,4 +31,3 @@ News
 - 28.2.2022. Our paper [An Iterative Quantum Approach for Transformation Estimation from Point Sets](https://doi.org/10.1109/CVPR52688.2022.00061) got accepted at CVPR22.
 
 - 1.4.2021. I started as a PhD student at the University of Luebeck in the ["Institute of Mathematics and Image Computing"](https://www.mic.uni-luebeck.de/about-us).
-</p>
