@@ -3,7 +3,7 @@ title: "Quantum Binary Optimization"
 collection: talks
 type: "Talk"
 permalink: /talks/talk-3
-venue: "ECCV 202 4, Quantum Computer Vision and Machine Learning"
+venue: "ECCV 2024, Quantum Computer Vision and Machine Learning"
 date: 2024-09-29
 location: "Milan, Italy"
 ---
