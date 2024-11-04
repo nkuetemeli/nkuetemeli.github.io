@@ -14,7 +14,7 @@ You can download a densified pdf version of my CV [here (updated May 24)](../fil
 Education
 ======
 * 2021–2024. 
-**Dr. rer nat.** (summa cum laude) in *Computational Life Science*, University of Luebeck, Germany.
+**Dr. rer nat.** (magna cum laude) in *Computational Life Science*, University of Luebeck, Germany.
 
   * Quantum Algorithms for Binary Problems with Applications to Image Processing.
   * Variational quantum circuits • QUBO/Ising models • Quantum annealing.
