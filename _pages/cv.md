@@ -26,7 +26,7 @@ Education
   * Object detection • image segmentation • deep learning • R-CNN • U-Net.
 
 * 2012–2015
-**B.Sc.** (12,96/20) in *Mathematics and Computer Science*, University of Dschang, Cameroon.
+**B.Sc.** (fairly good) in *Mathematics and Computer Science*, University of Dschang, Cameroon.
 
   * Backend Programming of a real estate web application in Java EE.
   * Jave EE • HTML • PHP • UML.
