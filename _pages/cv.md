@@ -41,7 +41,7 @@ Work experience
 
 * 2021 - 2024: Research Assistant
   * University of Luebeck
-  * Duties includes: Scientific research and publication, Teaching, Co-superstition of student thesis.
+  * Duties included: Scientific research and publication, Teaching, Co-superstition of student thesis.
   * Supervisor: Prof. Dr. Jan Lellmann
 
 * 2019 - 2021: Student Assistant
