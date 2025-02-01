@@ -10,4 +10,4 @@ location: "University of Luebeck, Germany"
 
 **Talk summary**
 > ![image](../files/Defense_KueteMeli.jpg) Talk for my Ph.D. thesis defense.
-[[Slides]](../files/qc_defense_KueteMeli.pdf)[[Dissertation]](../files/Dissertation_KueteMeli.pdf)
+[[Dissertation]](https://www.mic.uni-luebeck.de/fileadmin/mic/publications/2024/Dissertation_Natacha_Kuete_Meli_QuantumAlgorithmsForBinaryProblemsWithApplicationsToImageProcessing.pdf)
