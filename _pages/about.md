@@ -22,7 +22,7 @@ News
 
 - 29.4.2024. I started as a Research Assistant at the University of Siegen in the [Computer Vision Group](https://www.vsa.informatik.uni-siegen.de) lead by [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/), and I am co-supervised by [Dr. Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/), head of the [4D and Quantum Computer Vision Group](https://4dqv.mpi-inf.mpg.de) at Max Planck Institute for Informatics.
 
-- 23.4.2024. I successfully defended my PhD dissertation titled **Quantum Algorithms for Binary Problems with Applications to Image Processing**.
+- 23.4.2024. I successfully defended my PhD dissertation titled **Quantum Algorithms for Binary Problems with Applications to Image Processing**. [[Slides]](../files/qc_defense_KueteMeli.pdf)
 
 - 5.3.2024. I gave a Talk titled **Quantum Computing for Binary Optimization and Beyond: Bridging Classical and Quantum Landscapes** to the ["Computer Vision Group"](https://www.vsa.informatik.uni-siegen.de) of the University of Siegen. [[Slides]](../files/qc_siegen_KueteMeli.pdf)
 
