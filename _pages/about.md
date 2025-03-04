@@ -18,6 +18,8 @@ Quantum computing offers a powerful solution to overcome challenges posed by non
 
 News
 ======
+- 26.2.2025. Our paper [QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers](#) got accepted at CVPR25.
+
 - 29.9.2024. I was honored to give a talk titled **Quantum Binary Optimization** at the ECCV 2024 workshop on Quantum Computer Vision and Machine Learning ([QCVML](https://qcvml.github.io)). [[Slides]](../files/qc_eccv2024_KueteMeli.pdf)
 
 - 29.4.2024. I started as a Research Assistant at the University of Siegen in the [Computer Vision Group](https://www.vsa.informatik.uni-siegen.de) lead by [Prof. Dr. Michael Möller](https://sites.google.com/site/michaelmoellermath/), and I am co-supervised by [Dr. Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/), head of the [4D and Quantum Computer Vision Group](https://4dqv.mpi-inf.mpg.de) at Max Planck Institute for Informatics.
