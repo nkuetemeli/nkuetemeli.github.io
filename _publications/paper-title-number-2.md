@@ -6,8 +6,8 @@ excerpt: '**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann'
 date: 2023-10-01
 venue: 'Springer Quantum Inf Process'
 paperurl: 'https://doi.org/10.1007/s11128-023-04025-x'
-teaser: '../files/paper2_banner.png'
-poster: '../files/paper2_poster.pdf'
+teaser: '/files/paper2/paper2_banner.png'
+poster: '/files/paper2/paper2_poster.pdf'
 authors: '<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann'
 arxiv: 'https://arxiv.org/abs/2306.06539'
 code: 'https://github.com/nkuetemeli/UQMaxCutAndIsing'
@@ -16,7 +16,7 @@ bibtex: true
 
 {{ page.authors }}
 
-<img src="../files/paper2_banner.png" width='1000'/>
+<img src="/files/paper2/paper2_banner.png" width='1000'/>
 
 ---
 **Abstract:**
