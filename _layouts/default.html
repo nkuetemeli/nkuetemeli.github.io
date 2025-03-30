@@ -9,6 +9,20 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      /* Universal styling for content formatting */
+      body {
+        max-width: 60%; /* Constrain body content width to 60% */
+        margin: 0 auto; /* Center the content */
+        text-align: justify; /* Justify all text */
+        line-height: 1.4; /* Reduce line spacing */
+      }
+
+      .page__footer footer {
+        text-align: justify; /* Ensure footer text is justified */
+        line-height: 1.4; /* Reduce line spacing in the footer */
+      }
+    </style>
   </head>
 
   <body>
