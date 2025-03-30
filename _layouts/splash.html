@@ -2,6 +2,26 @@
 layout: default
 ---
 
+<style>
+  /* Apply universal styles for content layout */
+  #main {
+    max-width: 60%; /* Restrict content width to 60% */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: justify; /* Justify text alignment */
+    line-height: 1.4; /* Reduce line spacing */
+  }
+
+  .splash {
+    text-align: justify; /* Ensure text in the article is justified */
+    line-height: 1.4; /* Apply reduced line spacing for the article */
+  }
+
+  .page__content {
+    text-align: justify; /* Justify text in the content section */
+    line-height: 1.4; /* Apply reduced line spacing for the content section */
+  }
+</style>
+
 {% include base_path %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}

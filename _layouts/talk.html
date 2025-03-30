@@ -2,6 +2,26 @@
 layout: default
 ---
 
+<style>
+  /* Styling for content width, justification, and line spacing */
+  #main {
+    max-width: 60%; /* Constrain content width to 60% */
+    margin: 0 auto; /* Center content horizontally */
+    text-align: justify; /* Justify text */
+    line-height: 1.4; /* Reduce line spacing */
+  }
+
+  .page__content, .page__meta {
+    text-align: justify; /* Ensure justified text in specific sections */
+    line-height: 1.4; /* Apply reduced line spacing */
+  }
+
+  header, footer {
+    text-align: justify; /* Justify header and footer text */
+    line-height: 1.4; /* Reduce line spacing for header and footer */
+  }
+</style>
+
 {% include base_path %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}

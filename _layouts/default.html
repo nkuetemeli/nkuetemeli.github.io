@@ -6,16 +6,35 @@ layout: compress
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
 <head>
-  {% include head.html %} {% include head/custom.html %}
+  {% include head.html %}
+  {% include head/custom.html %}
+  <style>
+    /* Apply styles for width, justification, and line spacing */
+    body {
+      max-width: 60%; /* Limit content to 60% of text width */
+      margin: 0 auto; /* Center content horizontally */
+      text-align: justify; /* Justify text */
+      line-height: 1.4; /* Reduce line spacing */
+    }
+
+    .page__footer footer {
+      text-align: justify; /* Ensure footer text is justified */
+      line-height: 1.4; /* Reduce line spacing in the footer */
+    }
+  </style>
 </head>
 <body>
-{% include browser-upgrade.html %} {% include masthead.html %}
-{{ content }}
-<div class="page__footer">
-  <footer>
-    {% include footer/custom.html %}
-    {% include footer.html %}
-  </footer>
-</div> {% include scripts.html %}
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include footer.html %}
+    </footer>
+  </div>
+  {% include scripts.html %}
 </body>
 </html>

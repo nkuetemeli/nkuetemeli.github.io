@@ -2,6 +2,21 @@
 layout: default
 ---
 
+<style>
+  /* Apply styles for content width, text justification, and reduced line spacing */
+  #main {
+    max-width: 60%; /* Limit content width to 60% of the page */
+    margin: 0 auto; /* Center content */
+    text-align: justify; /* Justify all text */
+    line-height: 1.4; /* Reduce line spacing */
+  }
+
+  .archive {
+    text-align: justify; /* Justify text in the archive section */
+    line-height: 1.4; /* Reduce line spacing in the archive section */
+  }
+</style>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
