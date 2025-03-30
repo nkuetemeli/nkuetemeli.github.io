@@ -6,7 +6,7 @@ excerpt: '**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann'
 date: 2025-06-01
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://doi.org/10.1109/CVPRxxxxxxxxxxxx'
-teaser: '../../paper3/paper3_banner.png'
+teaser: '../files/paper3/paper3_banner.png'
 authors: '<b>Natacha Kuete Meli</b>, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
 arxiv: 'https://arxiv.org/abs/2503.19718v1'
 code: 'https://github.com/nkuetemeli/QuCOOP'
