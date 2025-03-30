@@ -7,7 +7,7 @@ date: 2023-10-01
 venue: 'Springer Quantum Inf Process'
 paperurl: 'https://doi.org/10.1007/s11128-023-04025-x'
 teaser: '/files/paper2/paper2_banner.png'
-poster: '/files/paper2/paper2_poster.pdf'
+poster: '../../paper2/paper2_poster.pdf'
 authors: '<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann'
 arxiv: 'https://arxiv.org/abs/2306.06539'
 code: 'https://github.com/nkuetemeli/UQMaxCutAndIsing'

@@ -6,7 +6,7 @@ excerpt: '**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann'
 date: 2022-10-01
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://doi.org/10.1109/CVPR52688.2022.00061'
-teaser: '/files/paper1/paper1_banner.png'
+teaser: '../../paper1/paper1_banner.png'
 poster: '/files/paper1/paper1_poster.pdf'
 authors: '<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann'
 bibtex: true
