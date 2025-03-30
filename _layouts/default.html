@@ -1,33 +1,14 @@
 ---
-layout: default
+layout: compress
 ---
 
 {% include base_path %}
-
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
 
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    <style>
-      /* Universal styling for content formatting */
-      body {
-        max-width: 100%; /* Constrain body content width to 60% */
-        margin: 0 auto; /* Center the content */
-        text-align: justify; /* Justify all text */
-        line-height: 1.4; /* Reduce line spacing */
-      }
-    </style>
   </head>
 
   <body>
@@ -36,9 +17,6 @@ layout: default
     {% include masthead.html %}
 
     {{ content }}
-
-
-
 
     <div class="page__footer">
       <footer>
