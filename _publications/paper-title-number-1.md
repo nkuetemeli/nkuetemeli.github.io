@@ -7,6 +7,7 @@ date: 2022-10-01
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://doi.org/10.1109/CVPR52688.2022.00061'
 teaser: '../files/paper1_banner.png'
+poster: '../files/paper1_poster.png'
 authors: '<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann'
 bibtex: true
 ---
@@ -23,7 +24,11 @@ bibtex: true
 ---
 **Ressources**
 
-{% if page.paperurl %}<a href=" {{ page.paperurl }} ">[pdf]</a>{% endif %} {% if page.arxiv %}<a href=" {{ page.arxiv }} ">[arxiv]</a>{% endif %} {% if page.code %}<a href=" {{ page.code }} ">[github]</a>{% endif %} {% if page.video %}<a href=" {{ page.video }} ">[video]</a>{% endif %} {% if poster %}<a href=" {{ page.poster }} ">[video]</a>{% endif %}
+{% if page.paperurl %}<a href=" {{ page.paperurl }} ">[pdf]</a>{% endif %} 
+{% if page.arxiv %}<a href=" {{ page.arxiv }} ">[arxiv]</a>{% endif %} 
+{% if page.code %}<a href=" {{ page.code }} ">[github]</a>{% endif %} 
+{% if page.video %}<a href=" {{ page.video }} ">[video]</a>{% endif %} 
+{% if poster %}<a href=" {{ page.poster }} ">[poster]</a>{% endif %}
 
 ---
 **Cite [BibTex]:**

@@ -10,7 +10,7 @@ teaser: '../files/paper3_banner.png'
 authors: '<b>Natacha Kuete Meli</b>, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
 arxiv: 'https://arxiv.org/abs/2503.19718v1'
 code: 'https://github.com/nkuetemeli/QuCOOP'
-Project: 'https://4dqv.mpi-inf.mpg.de/QuCOOP/'
+project: 'https://4dqv.mpi-inf.mpg.de/QuCOOP/'
 bibtex: true
 ---
 
@@ -31,11 +31,11 @@ Our approach achieves state-of-the-art results across multiple instances of test
 ---
 **Ressources**
 
-{% if page.paperurl %}<a href=" {{ page.paperurl }} ">[pdf]</a>{% endif %} 
+{% if page.paperurl %}<a href=" {{ page.paperurl }} ">[pdf (coming soon)]</a>{% endif %} 
 {% if page.arxiv %}<a href=" {{ page.arxiv }} ">[arxiv]</a>{% endif %} 
 {% if page.code %}<a href=" {{ page.code }} ">[github]</a>{% endif %} 
 {% if page.video %}<a href=" {{ page.video }} ">[video]</a>{% endif %} 
-{% if poster %}<a href=" {{ page.poster }} ">[video]</a>{% endif %}
+{% if poster %}<a href=" {{ page.poster }} ">[poster]</a>{% endif %}
 {% if poster %}<a href=" {{ page.project }} ">[project page]</a>{% endif %}
 
 ---

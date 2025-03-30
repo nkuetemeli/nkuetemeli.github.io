@@ -7,6 +7,7 @@ date: 2023-10-01
 venue: 'Springer Quantum Inf Process'
 paperurl: 'https://doi.org/10.1007/s11128-023-04025-x'
 teaser: '../files/paper2_banner.png'
+poster: '../files/paper2_poster.pdf'
 authors: '<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann'
 arxiv: 'https://arxiv.org/abs/2306.06539'
 code: 'https://github.com/nkuetemeli/UQMaxCutAndIsing'
@@ -25,7 +26,11 @@ bibtex: true
 ---
 **Ressources**
 
-{% if page.paperurl %}<a href=" {{ page.paperurl }} ">[pdf]</a>{% endif %} {% if page.arxiv %}<a href=" {{ page.arxiv }} ">[arxiv]</a>{% endif %} {% if page.code %}<a href=" {{ page.code }} ">[github]</a>{% endif %} {% if page.video %}<a href=" {{ page.video }} ">[video]</a>{% endif %} {% if poster %}<a href=" {{ page.poster }} ">[video]</a>{% endif %}
+{% if page.paperurl %}<a href=" {{ page.paperurl }} ">[pdf]</a>{% endif %} 
+{% if page.arxiv %}<a href=" {{ page.arxiv }} ">[arxiv]</a>{% endif %} 
+{% if page.code %}<a href=" {{ page.code }} ">[github]</a>{% endif %} 
+{% if page.video %}<a href=" {{ page.video }} ">[video]</a>{% endif %} 
+{% if poster %}<a href=" {{ page.poster }} ">[poster]</a>{% endif %}
 
 
 ---
