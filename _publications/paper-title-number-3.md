@@ -16,7 +16,7 @@ bibtex: true
 
 {{ page.authors }}
 
-<img src="/files/paper3/paper3_banner.png" width='900'/>
+<img src="/files/paper3/paper3_banner.png" width='700'/>
 
 ---
 **Abstract:**
