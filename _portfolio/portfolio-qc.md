@@ -1,6 +1,6 @@
 ---
 title: "Quantum Computing"
-excerpt: "Use quantum computing to solve optimization problems.<br/><img src='/images/portfolio_qc.png' width='600'>"
+excerpt: "Use quantum computing to solve optimization problems.<br/><img src='/images/portfolio_qc1.png' width='600'>"
 collection: portfolio
 ---
 

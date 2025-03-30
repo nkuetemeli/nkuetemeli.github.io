@@ -1,6 +1,6 @@
 ---
 title: "Computer Vision"
-excerpt: "Solve computer vision problems.<br/><img src='/images/portfolio_cv.png' width='600'>"
+excerpt: "Solve computer vision problems.<br/><img src='/images/portfolio_cv1.png' width='600'>"
 collection: portfolio
 ---
 
