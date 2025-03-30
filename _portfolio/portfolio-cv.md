@@ -6,4 +6,4 @@ collection: portfolio
 
 Design better models and solvers for computer vision problems.
 
-<img src='../../images/portfolio_cv.png' width='800'>
+<img src='../../images/portfolio_cv1.png' width='800'>
