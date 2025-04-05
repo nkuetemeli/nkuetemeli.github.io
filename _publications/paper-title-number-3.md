@@ -1,5 +1,5 @@
 ---
-title: "QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers [CVPR highlight]"
+title: "[CVPR highlight] QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers"
 collection: publications
 permalink: /publication/paper-title-number-3
 excerpt: '**Natacha Kuete Meli**, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
