@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/paper-title-number-3
 excerpt: '**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann'
 date: 2025-06-01
-venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'
+venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) [highlight]'
 paperurl: 'https://doi.org/10.1109/CVPRxxxxxxxxxxxx'
 teaser: '../files/paper3/paper3_banner.png'
 authors: '<b>Natacha Kuete Meli</b>, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
