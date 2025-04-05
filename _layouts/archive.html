@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -22,8 +22,10 @@ layout: archive
   }
 
   .archive {
-    text-align: justify; /* Ensure text in the archive section is justified */
-    line-height: 1.4; /* Apply reduced line spacing */
+    max-width: 80%; /* Constrain content width to 60% */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: justify; /* Justify all text */
+    line-height: 1.4; /* Reduce line spacing */
   }
 
   .page__title {
