@@ -1,10 +1,10 @@
 ---
-title: "QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers"
+title: "QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers [CVPR highlight]"
 collection: publications
 permalink: /publication/paper-title-number-3
-excerpt: '**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann'
+excerpt: '**Natacha Kuete Meli**, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
 date: 2025-06-01
-venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) [highlight]'
+venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://doi.org/10.1109/CVPRxxxxxxxxxxxx'
 teaser: '../files/paper3/paper3_banner.png'
 authors: '<b>Natacha Kuete Meli</b>, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
