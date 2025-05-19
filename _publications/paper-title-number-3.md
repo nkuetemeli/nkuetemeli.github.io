@@ -7,6 +7,7 @@ date: 2025-06-01
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'
 paperurl: 'https://doi.org/10.1109/CVPRxxxxxxxxxxxx'
 teaser: '../files/paper3/paper3_banner.png'
+poster: '../files/paper3/paper3_poster.pdf'
 authors: '<b>Natacha Kuete Meli</b>, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller'
 arxiv: 'https://arxiv.org/abs/2503.19718v1'
 code: 'https://github.com/nkuetemeli/QuCOOP'
