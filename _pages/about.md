@@ -18,7 +18,7 @@ Quantum computing offers a powerful solution to overcome challenges posed by non
 
 News
 ======
-- 18.9. 2025 — I was honoured to give a talk in Prof. Tolga Birdal’s group at Imperial College London.  [[Slides (comming soon)]](#)
+- 18.9. 2025 — I was honoured to give a talk in Prof. Tolga Birdal’s group at Imperial College London.  [[Slides (coming soon)]](#)
 
 - 15.9. 2025 — I have begun a 3-month appointment as a visiting researcher at Imperial College London, under the supervision of [Prof. Tolga Birdal](https://tolgabirdal.github.io). This visit aims to advance the development of Quantum Computer Vision, with a particular focus on its applications in Machine Learning.
 
