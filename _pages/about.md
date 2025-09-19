@@ -18,6 +18,8 @@ Quantum computing offers a powerful solution to overcome challenges posed by non
 
 News
 ======
+- 15.9. 2025 — I have begun a 3-month appointment as a visiting researcher at Imperial College London, under the supervision of Prof. [Tolga Birdal](https://tolgabirdal.github.io). This visit aims to advance the development of Quantum Computer Vision, with a particular focus on its applications in Machine Learning.
+
 - 26.2.2025. Our paper [QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers](https://arxiv.org/abs/2503.19718v1) got accepted as a **highlight** at CVPR25.
 
 - 29.9.2024. I was honored to give a talk titled **Quantum Binary Optimization** at the ECCV 2024 workshop on Quantum Computer Vision and Machine Learning ([QCVML](https://qcvml.github.io)). [[Slides]](/files/qc_eccv2024_KueteMeli.pdf)
