@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "Quantum Computing for Binary Optimization and Beyond: Bridging Classical and Quantum Landscapes",
+    "collection": "talks",
+    "type": "Talk",
+    "permalink": "/talks/talk-1",
+    "venue": "University of Siegen, Computer Vision Group",
+    "date": "2024-03-05",
+    "location": "University of Siegen, Germany",
+    "summary": "In this talk, I introduce quantum computing and discuss through adiabatic and universal paradigms its capabilities in solving challenging Quadratic Unconstrained Binary Optimization (QUBO) problems. While classical methods often struggle with such hard combinatorial problems, Adiabatic Quantum Computers (AQC) excel at solving them, inspiring even new mappings of practical optimization problems to QUBO forms. I will present an algorithm for rigid point-sets registration using AQC. Moving to universal quantum computing, I will introduce Variational Quantum Computing (VQC). VQC involves a hybrid quantum-classical computational loop, where a quantum computer executes only some specific, ideally quantum-native tasks, and a classical computer runs an optimization procedure to optimize over some objective function. A significant class of variational quantum objective functions allows the evaluation of their exact analytical gradients, enabling the use of gradient-based solvers. I will go over the possibility of solving QUBO problems with VQC.",
+    "links": [
+      { "label": "Slides", "href": "/files/talk1/qc_siegen_KueteMeli.pdf" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Ph.D. Thesis Defense",
+    "collection": "talks",
+    "type": "Talk",
+    "permalink": "/talks/talk-2",
+    "venue": "University of Luebeck, Institute of Mathematics and Image Computing",
+    "date": "2024-04-27",
+    "location": "University of Luebeck, Germany",
+    "summary": "Talk for my Ph.D. thesis defense.",
+    "links": [
+      { "label": "Dissertation", "href": "https://www.mic.uni-luebeck.de/fileadmin/mic/publications/2024/Dissertation_Natacha_Kuete_Meli_QuantumAlgorithmsForBinaryProblemsWithApplicationsToImageProcessing.pdf" }
+    ],
+    "image": "/files/dissertation/Defense_KueteMeli.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Binary Optimization",
+    "collection": "talks",
+    "type": "Talk",
+    "permalink": "/talks/talk-3",
+    "venue": "ECCV 2024, Quantum Computer Vision and Machine Learning",
+    "date": "2024-09-29",
+    "location": "Milan, Italy",
+    "summary": "Binary optimization is an omnipresent problem in computer vision. It helps, for example, to model decision problems such as labeling, matching, tracking, clustering, and more. However, solving binary optimization problems classically is challenging due to their discrete and combinatorial nature. Over the last few years, quantum computing, especially adiabatic quantum computing, has shown promising results in solving binary problems, raising the question of whether more efficient solvers exploiting quantum properties could be designed. In this talk, I discuss quantum solvers for binary optimization problems. Specifically, I will present a variational solver that splits the task hybridly into quantum and classical parts, where a quantum computer executes only some specific, ideally quantum-native tasks, and a classical computer runs an optimization procedure to optimize the objective function. I will show how to evaluate the objective and even compute its analytical gradient on the quantum hardware, allowing the use of gradient-based sub-solvers for optimizing the objective.",
+    "links": [
+      { "label": "Slides", "href": "/files/talk3/qc_eccv2024_KueteMeli.pdf" }
+    ]
+  }
+]

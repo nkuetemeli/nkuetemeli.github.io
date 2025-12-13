@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "An iterative quantum approach for transformation estimation from point sets",
+    "permalink": "/publication/paper-title-number-1",
+    "excerpt": "**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann",
+    "date": "2022-10-01",
+    "venue": "Computer Vision and Pattern Recognition (CVPR)",
+    "paperurl": "https://doi.org/10.1109/CVPR52688.2022.00061",
+    "teaser": "/files/paper1/paper1_banner0.png",
+    "poster": "/files/paper1/paper1_poster.pdf",
+    "authors": "<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann",
+    "bibtex": true
+  },
+  {
+    "id": 2,
+    "title": "A universal quantum algorithm for weighted maximum cut and Ising problems",
+    "permalink": "/publication/paper-title-number-2",
+    "excerpt": "**Natacha Kuete Meli**, Florian Mannel and Jan Lellmann",
+    "date": "2023-10-01",
+    "venue": "Springer Quantum Inf Process",
+    "paperurl": "https://doi.org/10.1007/s11128-023-04025-x",
+    "teaser": "/files/paper2/paper2_banner0.png",
+    "poster": "/files/paper2/paper2_poster.pdf",
+    "authors": "<b>Natacha Kuete Meli</b>, Florian Mannel and Jan Lellmann",
+    "arxiv": "https://arxiv.org/abs/2306.06539",
+    "code": "https://github.com/nkuetemeli/UQMaxCutAndIsing",
+    "bibtex": true
+  },
+  {
+    "id": 3,
+    "title": "QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers",
+    "permalink": "/publication/paper-title-number-3",
+    "excerpt": "**Natacha Kuete Meli**, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller",
+    "date": "2025-06-01",
+    "venue": "Computer Vision and Pattern Recognition (CVPR)",
+    "paperurl": "https://doi.org/10.1109/CVPR52734.2025.01064",
+    "teaser": "/files/paper3/paper3_banner.png",
+    "poster": "/files/paper3/paper3_poster.pdf",
+    "authors": "<b>Natacha Kuete Meli</b>, Vladislav Golyanik, Marcel Seelbach Benkner, Michael Moeller",
+    "arxiv": "https://arxiv.org/abs/2503.19718v1",
+    "code": "https://github.com/nkuetemeli/QuCOOP",
+    "project": "https://4dqv.mpi-inf.mpg.de/QuCOOP/",
+    "bibtex": true,
+    "award": "[CVPR Highlight]"
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "download": {
+    "url": "../files/CV_KueteMeli.pdf",
+    "label": "Download PDF (updated May 24)"
+  },
+  "education": [
+    {
+      "key": "phd",
+      "period": "2021–2024",
+      "degree": "Dr. rer. nat. (magna cum laude)",
+      "field": "Computational Life Science",
+      "institution": "University of Luebeck, Germany",
+      "details": [
+        "Quantum Algorithms for Binary Problems with Applications to Image Processing",
+        "Variational quantum circuits • QUBO/Ising models • Quantum annealing"
+      ]
+    },
+    {
+      "key": "msc",
+      "period": "2018–2021",
+      "degree": "M.Sc. (with distinction)",
+      "field": "Computational Life Science",
+      "institution": "University of Luebeck, Germany",
+      "details": [
+        "Trainable Detection Methods for Industrial Materials Testing",
+        "Object detection • image segmentation • deep learning • R-CNN • U-Net"
+      ]
+    },
+    {
+      "key": "bsc",
+      "period": "2012–2015",
+      "degree": "B.Sc. (fairly good)",
+      "field": "Mathematics and Computer Science",
+      "institution": "University of Dschang, Cameroon",
+      "details": [
+        "Backend Programming of a real estate web application in Java EE",
+        "Java EE • HTML • PHP • UML"
+      ]
+    }
+  ],
+  "workExperience": [
+    {
+      "key": "siegen",
+      "period": "Spring 2024",
+      "position": "Research and Teaching Assistant",
+      "institution": "University of Siegen",
+      "details": [
+        "Scientific research and publication",
+        "Teaching, Co-supervision of student thesis",
+        "Supervisor: Prof. Dr. Michael Möller"
+      ]
+    },
+    {
+      "key": "luebeck",
+      "period": "2021–2024",
+      "position": "Research and Teaching Assistant",
+      "institution": "University of Luebeck",
+      "details": [
+        "Scientific research and publication",
+        "Teaching, Co-supervision of student thesis",
+        "Supervisor: Prof. Dr. Jan Lellmann"
+      ]
+    },
+    {
+      "key": "student-assist",
+      "period": "2019–2021",
+      "position": "Student Assistant",
+      "institution": "International Office, University of Lübeck",
+      "details": [
+        "Database maintenance",
+        "Follow up of Erasmus applications",
+        "Supervisor: Karolin Saenger"
+      ]
+    }
+  ],
+  "profile": {
+    "languages": [
+      "French (Mother tongue)",
+      "German (C1)",
+      "English (Good)"
+    ],
+    "engagements": {
+      "womenInVision": [
+        "Member of Women in Vision Siegen (2024-2027)"
+      ],
+      "volunteer": [
+        "STEM role Model for School Girls (CyberMentor, 2022-2026)"
+      ]
+    }
+  },
+  "reviewerActivities": [
+    "QDSM´23",
+    "SSVM´23",
+    "CVPR´23,25",
+    "BVM´21",
+    "3DV´25,26",
+    "BMVC´25",
+    "ECCV´24 Publication Chair Support",
+    "EquinOCS#25",
+    "GCPR´24",
+    "ICLR´25,26",
+    "Nature 2025",
+    "NeurIPS´25",
+    "QDSM´24",
+    "TPAMI#25"
+  ]
+}

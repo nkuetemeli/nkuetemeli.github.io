@@ -1,0 +1,73 @@
+[
+  {
+    "date": "18.09.2025",
+    "text": "I was honoured to give a talk in Prof. Tolga Birdal’s group at Imperial College London.",
+    "links": [
+      { "label": "Slides (coming soon)", "href": "#" }
+    ]
+  },
+  {
+    "date": "15.09.2025",
+    "text": "I have begun a 3-month appointment as a visiting researcher at Imperial College London, under the supervision of Prof. Tolga Birdal. This visit aims to advance the development of Quantum Computer Vision, with a particular focus on its applications in Machine Learning.",
+    "links": [
+      { "label": "Prof. Tolga Birdal", "href": "https://tolgabirdal.github.io" }
+    ]
+  },
+  {
+    "date": "26.02.2025",
+    "text": "Our paper “QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers” got accepted as a highlight at CVPR 2025.",
+    "links": [
+      { "label": "arXiv", "href": "https://arxiv.org/abs/2503.19718v1" }
+    ]
+  },
+  {
+    "date": "29.09.2024",
+    "text": "I was honoured to give a talk titled “Quantum Binary Optimization” at the ECCV 2024 workshop on Quantum Computer Vision and Machine Learning (QCVML).",
+    "links": [
+      { "label": "QCVML", "href": "https://qcvml.github.io" },
+      { "label": "Slides", "href": "/files/qc_eccv2024_KueteMeli.pdf" }
+    ]
+  },
+  {
+    "date": "29.04.2024",
+    "text": "I started as a Research Assistant at the University of Siegen in the Computer Vision Group led by Prof. Dr. Michael Möller, and I am co-supervised by Dr. Vladislav Golyanik at the Max Planck Institute for Informatics.",
+    "links": [
+      { "label": "Computer Vision Group", "href": "https://www.vsa.informatik.uni-siegen.de" },
+      { "label": "Prof. Dr. Michael Möller", "href": "https://sites.google.com/site/michaelmoellermath/" },
+      { "label": "Dr. Vladislav Golyanik", "href": "https://people.mpi-inf.mpg.de/~golyanik/" }
+    ]
+  },
+  {
+    "date": "23.04.2024",
+    "text": "I successfully defended my PhD dissertation titled “Quantum Algorithms for Binary Problems with Applications to Image Processing”."
+  },
+  {
+    "date": "05.03.2024",
+    "text": "I gave a talk titled “Quantum Computing for Binary Optimization and Beyond: Bridging Classical and Quantum Landscapes” to the Computer Vision Group of the University of Siegen.",
+    "links": [
+      { "label": "Computer Vision Group", "href": "https://www.vsa.informatik.uni-siegen.de" },
+      { "label": "Slides", "href": "../files/qc_siegen_KueteMeli.pdf" }
+    ]
+  },
+  {
+    "date": "12.06.2023",
+    "text": "Our paper “A universal quantum algorithm for weighted maximum cut and Ising problems” got accepted for publication in Springer Quantum Information Processing.",
+    "links": [
+      { "label": "DOI", "href": "https://doi.org/10.1007/s11128-023-04025-x" }
+    ]
+  },
+  {
+    "date": "28.02.2022",
+    "text": "Our paper “An Iterative Quantum Approach for Transformation Estimation from Point Sets” got accepted at CVPR 2022.",
+    "links": [
+      { "label": "DOI", "href": "https://doi.org/10.1109/CVPR52688.2022.00061" }
+    ]
+  },
+  {
+    "date": "01.04.2021",
+    "text": "I started as a PhD student at the University of Lübeck in the Institute of Mathematics and Image Computing.",
+    "links": [
+      { "label": "Institute of Mathematics and Image Computing", "href": "https://www.mic.uni-luebeck.de/about-us" }
+    ]
+  }
+]

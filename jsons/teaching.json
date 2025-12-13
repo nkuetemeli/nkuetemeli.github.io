@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "title": "Non-Boolean quantum amplitude amplification for discret optimization.",
+    "collection": "supervision",
+    "type": "B.Sc",
+    "permalink": "/teaching/supervisor-1",
+    "venue": "University of Luebeck",
+    "date": "2023-01-01",
+    "location": "Lubeck, Germany",
+    "student": "Josephine Elisabeth Oettinger"
+  },
+  {
+    "id": 2,
+    "title": "Large-Scale 3D Point Cloud Classification using Parameterized Quantum Circuits.",
+    "collection": "supervision",
+    "type": "M.Sc",
+    "permalink": "/teaching/supervisor-2",
+    "venue": "University of Siegen",
+    "date": "2025-01-01",
+    "location": "Siegen, Germany",
+    "student": "Prajwal Maruti Edhate"
+  },
+  {
+    "id": 3,
+    "title": "Computer graphics",
+    "collection": "teaching",
+    "type": "Undergraduate and graduate course",
+    "permalink": "/teaching/teaching-1",
+    "venue": "University of Luebeck",
+    "date": "2020-01-01",
+    "location": "Lubeck, Germany",
+    "summary": "Summer term 2020 (~ 40 students per semester).",
+    "topics": [
+      "Geometric transformations in 2D and 3D",
+      "Homogeneous coordinates",
+      "Transformations between Cartesian coordinate systems",
+      "Planar and perspective projections",
+      "Polygonal models",
+      "Lighting models and shading methods",
+      "Texture Mapping",
+      "Culling and clipping",
+      "Removing hidden lines and surfaces",
+      "Raster graphics algorithms",
+      "Ray tracing",
+      "Shadows, reflections and transparency",
+      "Basics of graphics programming with OpenGL and GLSL"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Mathematical methods of image processing",
+    "collection": "teaching",
+    "type": "Undergraduate and graduate course",
+    "permalink": "/teaching/teaching-2",
+    "venue": "University of Luebeck",
+    "date": "2021-01-01",
+    "location": "Lubeck, Germany",
+    "summary": "Winter term 2021 (~ 30 students per semester).",
+    "topics": [
+      "Modeling in function space",
+      "Correctness and regularization",
+      "Basics of the calculus of variations and Euler-Lagrange equation",
+      "Image restoration",
+      "Segmentation and lifting procedures",
+      "Evolution equations in image processing (discretization, stability)"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Seminar numerical optimization",
+    "collection": "teaching",
+    "type": "Undergraduate and graduate course",
+    "permalink": "/teaching/teaching-3",
+    "venue": "University of Luebeck",
+    "date": "2022-01-01",
+    "location": "Lubeck, Germany",
+    "summary": "Winter terms 2021 and 2022 (~ 2 students per semester under my supervision).",
+    "topics": [
+      "Familiarization with a scientific subject area of the advanced subjects",
+      "Processing of the topic in written form",
+      "Giving a talk"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Linear algebra",
+    "collection": "teaching",
+    "type": "undergraduate course",
+    "permalink": "/teaching/teaching-4",
+    "venue": "University of Luebeck",
+    "date": "2023-01-01",
+    "location": "Lubeck, Germany",
+    "summary": "Summer term 2021 and winter term 2023 (~30 students per semester in my exercise group).",
+    "topics": [
+      "Basics: logic, sets, illustrations",
+      "Relations, equivalence relations, orders",
+      "Complete induction",
+      "Groups: basics, finite groups, permutations, 2x2 matrices",
+      "Rings, bodies, residual classes",
+      "Complex numbers: calculation rules, representations, roots of unity",
+      "Vector spaces: bases, dimension, dot products, norms"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Optimization",
+    "collection": "teaching",
+    "type": "Undergraduate course",
+    "permalink": "/teaching/teaching-5",
+    "venue": "University of Luebeck",
+    "date": "2023-01-01",
+    "location": "Lubeck, Germany",
+    "summary": "Summer terms 2022 and 2023 (~ 12 students per semester).",
+    "topics": [
+      "Linear optimization (simplex method)",
+      "Nonlinear optimization without constraints (gradient method, CG, Newton method, quasi-Newton, globalization)",
+      "Nonlinear optimization with equation and inequality constraints (Lagrange multipliers, active set method)",
+      "Stochastic methods in machine learning"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Quantum image processing",
+    "collection": "teaching",
+    "type": "Undergraduate and Graduate course",
+    "permalink": "/teaching/teaching-6",
+    "venue": "University of Luebeck",
+    "date": "2023-01-01",
+    "location": "Lubeck, Germany",
+    "summary": "Winter terms 2021, 2022 and 2023 (~ 15 students per semester).",
+    "topics": [
+      "Basics (unitary transformations, qubits, measurements, circuit model)",
+      "Quantum image models and image operations",
+      "Adiabatic quantum computing",
+      "Current models from quantum image processing",
+      "Quantum optimization approaches for computer vision"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Deep Learning",
+    "collection": "teaching",
+    "type": "Undergraduate and Graduate course",
+    "permalink": "/teaching/teaching-7",
+    "venue": "University of Siegen",
+    "date": "2025-01-01",
+    "location": "Siegen, Germany",
+    "summary": "Winter term 2025 (~ 50 students per semester).",
+    "topics": [
+      "Supervised machine learning as an interpolation problem",
+      "Simple network architectures: Fully connected layers, rectified linear units, sigmoids, softmax",
+      "Gradient descent for nested functions: The chain rule and its implementation via backpropagation",
+      "Stochastic gradient descent on large data sets, acceleration via momentum and ADAM",
+      "Capacity, overfitting and underfitting of neural networks",
+      "Training, testing, and validation data sets",
+      "Improving generalization: data augmentation, dropout, early stopping",
+      "Working with images: Convolutions and pooling layers. Computing derivatives and adjoint linear operators",
+      "Getting the network to train: Data preprocessing, weight initialization schemes, and batch normalization",
+      "Applications and state-of-the-art architectures for image classification, segmentation, and denoising",
+      "Architecture designs: Encoder-decoder idea, unrolled algorithms, skip connections + residual learning, recurrent neural networks",
+      "Implementations in NumPy and PyTorch: Hands-on practical experience by implementing gradient descent on a fully connected network in NumPy",
+      "Introduction to the deep learning framework PyTorch for training complex models on GPUs"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Nonlinear Convex Optimization with Applications in Imaging and Vision",
+    "collection": "teaching",
+    "type": "Undergraduate and Graduate course",
+    "permalink": "/teaching/teaching-8",
+    "venue": "University of Siegen",
+    "date": "2025-01-04",
+    "location": "Siegen, Germany",
+    "summary": "Summer term 2025 (~ 4 students per semester).",
+    "topics": [
+      "Convex sets and functions",
+      "Gradient descent and its convergence",
+      "Variants: projected, proximal, and forward-backward splitting",
+      "Newton and quasi-Newton methods",
+      "Subdifferentials and KKT conditions",
+      "Quadratic programming and interior point methods",
+      "Duality and sequential quadratic programming",
+      "Nonsmooth Newton methods: NCP, patchwise, semismooth",
+      "Primal-dual hybrid gradient methods",
+      "Proximal Newton methods for unconstrained problems"
+    ]
+  }
+]
