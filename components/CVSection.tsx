@@ -80,13 +80,16 @@ const ConciseCVCards: React.FC = () => {
                 <div className="mb-4">
                     <h4 className="space-y-2 text-gray-700 text-sm">Languages</h4>
                     <div className="space-y-2 text-gray-700 text-sm">
-                        {CVData.profile.languages.map((lang, idx) => (
-                            <div key={idx}>
-                                <span className="text-gray-500">{lang}</span>
-                            </div>
-                        ))}
+                        <ul className="space-y-2 text-gray-700 text-sm">
+                            {CVData.profile.languages.map(lang => (
+                                <li key={lang}>
+                                    <span className="text-gray-500">{lang}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
+
 
                 {/* Engagements */}
                 <div>
@@ -110,15 +113,14 @@ const ConciseCVCards: React.FC = () => {
             </motion.div>
 
 
-
-          {/* Reviewer Activities Card */}
-          <motion.div
-              variants={itemVariants}
-              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
-          >
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Reviewer Activities</h3>
-            <div className="flex flex-wrap gap-2">
-              {CVData.reviewerActivities.map((rev, idx) => (
+            {/* Reviewer Activities Card */}
+            <motion.div
+                variants={itemVariants}
+                className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+            >
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Reviewer Activities</h3>
+                <div className="flex flex-wrap gap-2">
+                {CVData.reviewerActivities.map((rev, idx) => (
                   <span key={idx} className="bg-indigo-100 text-indigo-700 font-medium text-xs px-3 py-1 rounded-full">
                     {rev}
                   </span>
