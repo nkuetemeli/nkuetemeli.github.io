@@ -108,52 +108,75 @@ const AboutSection: React.FC = () => {
           <motion.ul layout className="space-y-4 text-left">
             <AnimatePresence>
               {visibleNews.map((item, index) => (
-                <motion.li
-                  key={item.date + index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="border-l-4 border-indigo-500 pl-4"
-                >
-                  <span className="text-sm text-gray-500">{item.date}</span>
-                  <p className="text-gray-700">
-                    {item.text}{" "}
-                    {item.links?.map((link, i) => (
-                      <a
-                        key={i}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-indigo-600 hover:underline ml-1"
-                      >
-                        [{link.label}]
-                      </a>
-                    ))}
-                  </p>
-                </motion.li>
+                  <motion.li
+                      key={item.date + index}
+                      initial={{opacity: 0, y: 20}}
+                      animate={{opacity: 1, y: 0}}
+                      exit={{opacity: 0, y: 20}}
+                      transition={{duration: 0.4, delay: index * 0.05}}
+                      className="border-l-4 border-indigo-500 pl-4"
+                  >
+                    <span className="text-sm text-gray-500">{item.date}</span>
+                    <p className="text-gray-700">
+                      {item.text.split(/(\{\{.*?\}\})/g).map((part, idx) => {
+                        const match = item.links?.find(
+                            l => l.key && `{{${l.key}}}` === part
+                        );
+
+                        return match ? (
+                            <a
+                                key={idx}
+                                href={match.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-indigo-600 hover:underline font-medium"
+                            >
+                              {match.label}
+                            </a>
+                        ) : (
+                            <span key={idx}>{part}</span>
+                        );
+                      })}
+
+                      {/* fallback: render remaining links normally */}
+                      {item.links
+                          ?.filter(l => !l.key)
+                          .map((link, i) => (
+                              <a
+                                  key={`link-${i}`}
+                                  href={link.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-indigo-600 hover:underline ml-1"
+                              >
+                                [{link.label}]
+                              </a>
+                          ))}
+                    </p>
+
+                  </motion.li>
               ))}
             </AnimatePresence>
           </motion.ul>
 
           {NewsData.length > 4 && (
-            <motion.div variants={itemVariants} className="mt-6 flex justify-center lg:justify-start">
-              <button
-                onClick={() => setShowAllNews((prev) => !prev)}
-                className="px-5 py-2 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
-              >
-                {showAllNews ? "Show less" : "Show all news"}
-              </button>
-            </motion.div>
+              <motion.div variants={itemVariants} className="mt-6 flex justify-center lg:justify-start">
+                <button
+                    onClick={() => setShowAllNews((prev) => !prev)}
+                    className="px-5 py-2 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
+                >
+                  {showAllNews ? "Show less" : "Show all news"}
+                </button>
+              </motion.div>
           )}
         </motion.div>
 
         {/* IMAGE */}
         <motion.div
-          className="flex justify-center"
-          variants={{
-            hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1, transition: { duration: 0.7, ease: "easeOut" } },
+            className="flex justify-center"
+            variants={{
+              hidden: {opacity: 0, scale: 0.8},
+              visible: {opacity: 1, scale: 1, transition: { duration: 0.7, ease: "easeOut" } },
           }}
         >
           <div className="relative w-80 h-80 lg:w-96 lg:h-96">
