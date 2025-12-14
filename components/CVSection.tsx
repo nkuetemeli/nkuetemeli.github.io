@@ -82,7 +82,7 @@ const ConciseCVCards: React.FC = () => {
                     <div className="space-y-2 text-gray-700 text-sm">
                         {CVData.profile.languages.map((lang, idx) => (
                             <div key={idx}>
-                                <span className="font-semibold">{lang}</span>
+                                <span className="text-gray-500">{lang}</span>
                             </div>
                         ))}
                     </div>
@@ -94,12 +94,12 @@ const ConciseCVCards: React.FC = () => {
                     <div className="space-y-2 text-gray-700 text-sm">
                         {CVData.profile.engagements.womenInVision.map((item, idx) => (
                             <div key={`women-${idx}`}>
-                                <span className="font-semibold">{item}</span>
+                                <span className="text-gray-500">{item}</span>
                             </div>
                         ))}
                         {CVData.profile.engagements.volunteer.map((item, idx) => (
                             <div key={`volunteer-${idx}`}>
-                                <span className="font-semibold">{item}</span>
+                                <span className="text-gray-500">{item}</span>
                             </div>
                         ))}
                     </div>
