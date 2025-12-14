@@ -92,7 +92,7 @@ const ConciseCVCards: React.FC = () => {
 
 
                 {/* Engagements */}
-                <div>
+                <div className="mb-4">
                     <h4 className="space-y-2 text-gray-700 text-sm">Engagements</h4>
                     <div className="space-y-2 text-gray-700 text-sm">
                         {CVData.profile.engagements.womenInVision.map((item, idx) => (
@@ -101,6 +101,8 @@ const ConciseCVCards: React.FC = () => {
                             </div>
                         ))}
                     </div>
+                </div>
+                <div className="mb-4">
                     <h4 className="space-y-2 text-gray-700 text-sm">Volunteer</h4>
                     <div className="space-y-2 text-gray-700 text-sm">
                         {CVData.profile.engagements.volunteer.map((item, idx) => (
