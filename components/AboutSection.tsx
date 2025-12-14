@@ -23,7 +23,6 @@ const itemVariants: Variants = {
 const AboutSection: React.FC = () => {
   const [showAllNews, setShowAllNews] = useState(false);
 
-  // Sort news descending by date
   const sortedNews = [...NewsData].sort((a, b) => {
     const dateA = new Date(a.date.split(".").reverse().join("-"));
     const dateB = new Date(b.date.split(".").reverse().join("-"));
@@ -49,15 +48,30 @@ const AboutSection: React.FC = () => {
 
           <motion.p variants={itemVariants} className="text-gray-600 mb-4">
             Since April 2024, I have held a position as a research assistant for quantum computer vision at the{" "}
-            <a href="https://www.vsa.informatik.uni-siegen.de" className="text-indigo-600 hover:underline">
+            <a
+              href="https://www.vsa.informatik.uni-siegen.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:underline"
+            >
               University of Siegen
             </a>{" "}
             in the Computer Vision Group of{" "}
-            <a href="https://sites.google.com/site/michaelmoellermath/" className="text-indigo-600 hover:underline">
+            <a
+              href="https://sites.google.com/site/michaelmoellermath/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:underline"
+            >
               Prof. Dr. Michael Möller
             </a>
             , and I am co-supervised by{" "}
-            <a href="https://people.mpi-inf.mpg.de/~golyanik/" className="text-indigo-600 hover:underline">
+            <a
+              href="https://people.mpi-inf.mpg.de/~golyanik/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:underline"
+            >
               Dr. Vladislav Golyanik
             </a>{" "}
             at the Max Planck Institute for Informatics.
@@ -66,13 +80,24 @@ const AboutSection: React.FC = () => {
           <motion.p variants={itemVariants} className="text-gray-600 mb-8">
             I received my PhD on quantum algorithms for image processing and my Master in computational life science
             from the University of Lübeck, both under the supervision of{" "}
-            <a href="https://www.lellmann.net/work/" className="text-indigo-600 hover:underline">
+            <a
+              href="https://www.lellmann.net/work/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:underline"
+            >
               Prof. Dr. Jan Lellmann
             </a>
             . I received my Bachelor in computer science from the University of Dschang under the supervision of{" "}
-            <a href="https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji" className="text-indigo-600 hover:underline">
-              Prof. Dr. Maurice Tchoupe Tchendji.
+            <a
+              href="https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:underline"
+            >
+              Prof. Dr. Maurice Tchoupe Tchendji
             </a>
+            .
           </motion.p>
 
           {/* NEWS */}
@@ -84,7 +109,7 @@ const AboutSection: React.FC = () => {
             <AnimatePresence>
               {visibleNews.map((item, index) => (
                 <motion.li
-                  key={item.date + index} // unique key
+                  key={item.date + index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
@@ -98,6 +123,8 @@ const AboutSection: React.FC = () => {
                       <a
                         key={i}
                         href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-indigo-600 hover:underline ml-1"
                       >
                         [{link.label}]
@@ -109,7 +136,6 @@ const AboutSection: React.FC = () => {
             </AnimatePresence>
           </motion.ul>
 
-          {/* TOGGLE BUTTON */}
           {NewsData.length > 4 && (
             <motion.div variants={itemVariants} className="mt-6 flex justify-center lg:justify-start">
               <button
