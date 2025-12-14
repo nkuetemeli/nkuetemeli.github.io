@@ -53,7 +53,7 @@ const TeachingSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Here are some teaching and co‑supervision activities in which I was involved.
+          Here are some teaching and co‑supervision activities in which I was involved as an assistant.
           <br />
           Click a teaching item to see its details.
         </motion.p>

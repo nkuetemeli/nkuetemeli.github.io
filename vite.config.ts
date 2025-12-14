@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/nkuetemeli/',  // <--- Add this for GitHub Pages
+    base: '/',  // <--- Add this for GitHub Pages
     server: {
       port: 3000,
       host: '0.0.0.0',
