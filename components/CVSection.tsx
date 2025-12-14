@@ -97,6 +97,9 @@ const ConciseCVCards: React.FC = () => {
                                 <span className="text-gray-500">{item}</span>
                             </div>
                         ))}
+                    </div>
+                    <h4 className="font-semibold text-gray-700 mb-2">Volunteer</h4>
+                    <div className="space-y-2 text-gray-700 text-sm">
                         {CVData.profile.engagements.volunteer.map((item, idx) => (
                             <div key={`volunteer-${idx}`}>
                                 <span className="text-gray-500">{item}</span>
