@@ -67,24 +67,25 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-4">
           {/* Desktop CTA */}
           <motion.a
-            href={`mailto:${EMAIL}`}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-gray-900 cursor-pointer text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-800 transition-colors duration-300"
+              href={`mailto:${EMAIL}`}
+              initial={{opacity: 0, x: 20}}
+              animate={{opacity: 1, x: 0}}
+              transition={{duration: 0.5, delay: 0.5}}
+              whileHover={{scale: 1.05}}
+              whileTap={{scale: 0.95}}
+              className="hidden lg:inline-block bg-gray-900 cursor-pointer text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-800 transition-colors duration-300"
           >
             Get in Touch
           </motion.a>
 
+
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-800"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-gray-800"
             >
-              {isMenuOpen ? <X /> : <Menu />}
+              {isMenuOpen ? <X/> : <Menu/>}
             </button>
           </div>
         </div>
@@ -93,17 +94,17 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden mt-4"
-          >
-            <nav className="flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <button
-                  key={link.name}
-                  onClick={() => scrollToSection(link.href.substring(1))}
+            <motion.div
+                initial={{opacity: 0, height: 0}}
+                animate={{opacity: 1, height: 'auto'}}
+                exit={{opacity: 0, height: 0}}
+                className="lg:hidden mt-4"
+            >
+              <nav className="flex flex-col gap-4">
+                {navLinks.map((link) => (
+                    <button
+                        key={link.name}
+                        onClick={() => scrollToSection(link.href.substring(1))}
                   className="text-sm font-medium text-gray-600 hover:text-indigo-600 py-2"
                 >
                   {link.name}
