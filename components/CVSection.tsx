@@ -30,7 +30,7 @@ const ConciseCVCards: React.FC = () => {
         </h2>
 
         <motion.p className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12">
-          Here is my concise CV with education, experience, profile details, and reviewer activities.
+          My concise CV with education, experience, profile details, and reviewer activities.
         </motion.p>
 
         <motion.div
@@ -69,21 +69,6 @@ const ConciseCVCards: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* Reviewer Activities Card */}
-          <motion.div
-              variants={itemVariants}
-              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
-          >
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Reviewer Activities</h3>
-            <div className="flex flex-wrap gap-2">
-              {CVData.reviewerActivities.map((rev, idx) => (
-                  <span key={idx} className="bg-indigo-100 text-indigo-700 font-medium text-xs px-3 py-1 rounded-full">
-                    {rev}
-                  </span>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Profile Card (Languages + Engagements) */}
           <motion.div
               variants={itemVariants}
@@ -94,14 +79,13 @@ const ConciseCVCards: React.FC = () => {
             {/* Languages */}
             <div className="mb-3">
               <h4 className="font-semibold text-gray-700 mb-1">Languages</h4>
-              <div className="flex flex-wrap gap-2">
+              <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
                 {CVData.profile.languages.map((lang, idx) => (
-                  <span key={idx} className="bg-indigo-100 text-indigo-700 font-medium text-xs px-3 py-1 rounded-full">
-                    {lang}
-                  </span>
+                  <li key={idx}>{lang}</li>
                 ))}
-              </div>
+              </ul>
             </div>
+
 
             {/* Engagements */}
             <div>
@@ -114,6 +98,21 @@ const ConciseCVCards: React.FC = () => {
                   <li key={`volunteer-${idx}`}>{item}</li>
                 ))}
               </ul>
+            </div>
+          </motion.div>
+
+          {/* Reviewer Activities Card */}
+          <motion.div
+              variants={itemVariants}
+              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+          >
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Reviewer Activities</h3>
+            <div className="flex flex-wrap gap-2">
+              {CVData.reviewerActivities.map((rev, idx) => (
+                  <span key={idx} className="bg-indigo-100 text-indigo-700 font-medium text-xs px-3 py-1 rounded-full">
+                    {rev}
+                  </span>
+              ))}
             </div>
           </motion.div>
         </motion.div>
