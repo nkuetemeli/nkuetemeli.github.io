@@ -69,7 +69,10 @@ const AboutSection: React.FC = () => {
             <a href="https://www.lellmann.net/work/" className="text-indigo-600 hover:underline">
               Prof. Dr. Jan Lellmann
             </a>
-            . I received my Bachelor in computer science from the University of Dschang.
+            . I received my Bachelor in computer science from the University of Dschang under the supervision of{" "}
+            <a href="https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji" className="text-indigo-600 hover:underline">
+              Prof. Dr. Maurice Tchoupe Tchendji.
+            </a>
           </motion.p>
 
           {/* NEWS */}
