@@ -8,14 +8,7 @@
   },
   {
     "date": "15.09.2025",
-    "text": "I have begun a 3-month appointment as a visiting researcher at Imperial College London, under the supervision of {{TolgaBirdal}}. This visit aims to advance the development of Quantum Computer Vision, with a particular focus on its applications in Machine Learning.",
-    "links": [
-      {
-        "key": "TolgaBirdal",
-        "label": "Prof. Tolga Birdal",
-        "href": "https://tolgabirdal.github.io"
-      }
-    ]
+    "text": "I have begun a 3-month appointment as a visiting researcher at Imperial College London, under the supervision of <a href='https://tolgabirdal.github.io' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Prof. Tolga Birdal</a>. This visit aims to advance the development of Quantum Computer Vision, with a particular focus on its applications in Machine Learning."
   },
   {
     "date": "26.02.2025",

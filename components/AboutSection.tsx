@@ -23,6 +23,7 @@ const itemVariants: Variants = {
 const AboutSection: React.FC = () => {
   const [showAllNews, setShowAllNews] = useState(false);
 
+  // Sort news descending by date
   const sortedNews = [...NewsData].sort((a, b) => {
     const dateA = new Date(a.date.split(".").reverse().join("-"));
     const dateB = new Date(b.date.split(".").reverse().join("-"));
@@ -48,30 +49,15 @@ const AboutSection: React.FC = () => {
 
           <motion.p variants={itemVariants} className="text-gray-600 mb-4">
             Since April 2024, I have held a position as a research assistant for quantum computer vision at the{" "}
-            <a
-              href="https://www.vsa.informatik.uni-siegen.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
-            >
+            <a href="https://www.vsa.informatik.uni-siegen.de" className="text-indigo-600 hover:underline">
               University of Siegen
             </a>{" "}
             in the Computer Vision Group of{" "}
-            <a
-              href="https://sites.google.com/site/michaelmoellermath/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
-            >
+            <a href="https://sites.google.com/site/michaelmoellermath/" className="text-indigo-600 hover:underline">
               Prof. Dr. Michael Möller
             </a>
             , and I am co-supervised by{" "}
-            <a
-              href="https://people.mpi-inf.mpg.de/~golyanik/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
-            >
+            <a href="https://people.mpi-inf.mpg.de/~golyanik/" className="text-indigo-600 hover:underline">
               Dr. Vladislav Golyanik
             </a>{" "}
             at the Max Planck Institute for Informatics.
@@ -80,24 +66,14 @@ const AboutSection: React.FC = () => {
           <motion.p variants={itemVariants} className="text-gray-600 mb-8">
             I received my PhD on quantum algorithms for image processing and my Master in computational life science
             from the University of Lübeck, both under the supervision of{" "}
-            <a
-              href="https://www.lellmann.net/work/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
-            >
+            <a href="https://www.lellmann.net/work/" className="text-indigo-600 hover:underline">
               Prof. Dr. Jan Lellmann
             </a>
             . I received my Bachelor in computer science from the University of Dschang under the supervision of{" "}
-            <a
-              href="https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
-            >
-              Prof. Dr. Maurice Tchoupe Tchendji
+            <a href="https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji"
+               className="text-indigo-600 hover:underline">
+              Prof. Dr. Maurice Tchoupe Tchendji.
             </a>
-            .
           </motion.p>
 
           {/* NEWS */}
@@ -109,7 +85,7 @@ const AboutSection: React.FC = () => {
             <AnimatePresence>
               {visibleNews.map((item, index) => (
                   <motion.li
-                      key={item.date + index}
+                      key={item.date + index} // unique key
                       initial={{opacity: 0, y: 20}}
                       animate={{opacity: 1, y: 0}}
                       exit={{opacity: 0, y: 20}}
@@ -117,48 +93,35 @@ const AboutSection: React.FC = () => {
                       className="border-l-4 border-indigo-500 pl-4"
                   >
                     <span className="text-sm text-gray-500">{item.date}</span>
-                    <p className="text-gray-700">
-                      {item.text.split(/(\{\{.*?\}\})/g).map((part, idx) => {
-                        const match = item.links?.find(
-                            l => l.key && `{{${l.key}}}` === part
-                        );
 
-                        return match ? (
-                            <a
-                                key={idx}
-                                href={match.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-indigo-600 hover:underline font-medium"
-                            >
-                              {match.label}
-                            </a>
-                        ) : (
-                            <span key={idx}>{part}</span>
-                        );
-                      })}
+                    {/* News text with HTML */}
+                    <p
+                        className="text-gray-700"
+                        dangerouslySetInnerHTML={{__html: item.text}}
+                    />
 
-                      {/* fallback: render remaining links normally */}
-                      {item.links
-                          ?.filter(l => !l.key)
-                          .map((link, i) => (
+                    {/* Optional links at the end */}
+                    {item.links?.length > 0 && (
+                        <div className="mt-1">
+                          {item.links.map((link, i) => (
                               <a
-                                  key={`link-${i}`}
+                                  key={i}
                                   href={link.href}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="text-indigo-600 hover:underline ml-1"
+                                  className="text-indigo-600 hover:underline mr-2"
                               >
                                 [{link.label}]
                               </a>
                           ))}
-                    </p>
-
+                        </div>
+                    )}
                   </motion.li>
               ))}
             </AnimatePresence>
           </motion.ul>
 
+          {/* TOGGLE BUTTON */}
           {NewsData.length > 4 && (
               <motion.div variants={itemVariants} className="mt-6 flex justify-center lg:justify-start">
                 <button
@@ -176,15 +139,15 @@ const AboutSection: React.FC = () => {
             className="flex justify-center"
             variants={{
               hidden: {opacity: 0, scale: 0.8},
-              visible: {opacity: 1, scale: 1, transition: { duration: 0.7, ease: "easeOut" } },
-          }}
+              visible: {opacity: 1, scale: 1, transition: {duration: 0.7, ease: "easeOut"}},
+            }}
         >
           <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-full -rotate-12" />
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-full -rotate-12"/>
             <img
-              src={ProfileAvatar}
-              alt="Natacha Kuete Meli"
-              className="relative w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
+                src={ProfileAvatar}
+                alt="Natacha Kuete Meli"
+                className="relative w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
             />
           </div>
         </motion.div>
