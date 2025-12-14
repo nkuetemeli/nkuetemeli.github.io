@@ -69,7 +69,7 @@ const ConciseCVCards: React.FC = () => {
             </ul>
           </motion.div>
 
-            {/* Profile Card (Languages + Engagements) */}
+          {/* Profile Card (Languages + Engagements) */}
             <motion.div
                 variants={itemVariants}
                 className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
@@ -78,34 +78,35 @@ const ConciseCVCards: React.FC = () => {
 
                 {/* Languages */}
                 <div className="mb-4">
-                    <h4 className="font-semibold text-gray-700 mb-2">Languages</h4>
-                    <div className="space-y-2 text-gray-700 text-sm">
-                        {CVData.profile.languages.map((lang, idx) => (
-                            <div key={idx}>
-                                <span className="font-semibold">{lang}</span>
-                            </div>
+                    <h4 className="font-semibold">Languages</h4>
+                    <ul className="space-y-2 text-gray-700 text-sm">
+                        {CVData.profile.languages.map(lang => (
+                            <li key={lang}>
+                                <span className="text-gray-500">{lang}</span>
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 </div>
+
 
                 {/* Engagements */}
                 <div className="mb-4">
-                    <h4 className="font-semibold text-gray-700 mb-2">Engagements</h4>
-                    <div className="space-y-2 text-gray-700 text-sm">
-                        {CVData.profile.engagements.womenInVision.map((item, idx) => (
-                            <div key={`women-${idx}`}>
-                                <span className="font-semibold">{item}</span>
-                            </div>
-                        ))}
-                        {CVData.profile.engagements.volunteer.map((item, idx) => (
-                            <div key={`volunteer-${idx}`}>
-                                <span className="font-semibold">{item}</span>
-                            </div>
-                        ))}
-                    </div>
+                    <h4 className="font-semibold">Engagements</h4>
+                    {CVData.profile.engagements.womenInVision.map((item, idx) => (
+                        <div key={`women-${idx}`}>
+                            <span className="text-gray-500">{item}</span>
+                        </div>
+                    ))}
+                </div>
+                <div className="mb-4">
+                    <h4 className="font-semibold">Volunteer</h4>
+                    {CVData.profile.engagements.volunteer.map((item, idx) => (
+                        <div key={`volunteer-${idx}`}>
+                            <span className="text-gray-500">{item}</span>
+                        </div>
+                    ))}
                 </div>
             </motion.div>
-
 
 
             {/* Reviewer Activities Card */}
