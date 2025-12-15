@@ -18,12 +18,20 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
-    }
+    setIsMenuOpen(false);
+
+    // Wait for mobile menu to collapse
+    setTimeout(() => {
+      const section = document.getElementById(id);
+      if (!section) return;
+
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 250); // match Framer Motion exit duration
   };
+
 
   return (
     <header className="fixed top-0 left-0 right-0 mx-auto w-[95%] max-w-7xl bg-white/80 backdrop-blur-md rounded-full shadow-md py-3 px-6 z-50">
