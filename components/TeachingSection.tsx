@@ -14,7 +14,7 @@ const TeachingSection: React.FC = () => {
     .sort((a, b) => b.date.localeCompare(a.date));
 
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
-  const [selectedItem, setSelectedItem] = useState(teachingItems[0] ?? null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const visibleTeachingItems = teachingItems.slice(0, visibleCount);
 
@@ -76,7 +76,7 @@ const TeachingSection: React.FC = () => {
                   <button
                     onClick={() => {
                       setVisibleCount(INITIAL_VISIBLE);
-                      setSelectedItem(teachingItems[0] ?? null);
+                      setSelectedItem(null);
                     }}
                     className="bg-gray-200 text-gray-800 font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition"
                   >
