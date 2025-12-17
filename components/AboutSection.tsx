@@ -95,27 +95,27 @@ const AboutSection: React.FC = () => {
                     <span className="text-sm text-gray-500">{item.date}</span>
 
                     {/* News text with HTML */}
-                    <p
-                        className="text-gray-700"
-                        dangerouslySetInnerHTML={{__html: item.text}}
-                    />
+                    <p className="text-gray-700">
+                      <span dangerouslySetInnerHTML={{__html: item.text}}/>
 
-                    {/* Optional links at the end */}
-                    {item.links?.length > 0 && (
-                        <div className="mt-1">
-                          {item.links.map((link, i) => (
-                              <a
-                                  key={i}
-                                  href={link.href}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-indigo-600 hover:underline mr-2"
-                              >
-                                [{link.label}]
-                              </a>
-                          ))}
-                        </div>
-                    )}
+                      {item.links?.length > 0 && (
+                          <>
+                            {" "}
+                            {item.links.map((link, i) => (
+                                <a
+                                    key={i}
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-indigo-600 hover:underline ml-1"
+                                >
+                                  [{link.label}]
+                                </a>
+                            ))}
+                          </>
+                      )}
+                    </p>
+
                   </motion.li>
               ))}
             </AnimatePresence>
