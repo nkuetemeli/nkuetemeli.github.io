@@ -27,12 +27,7 @@
   },
   {
     "date": "29.04.2024",
-    "text": "I started as a PostDoc at the University of Siegen in the Computer Vision Group led by Prof. Dr. Michael Möller, and I am co-supervised by Dr. Vladislav Golyanik at the Max Planck Institute for Informatics.",
-    "links": [
-      { "label": "Computer Vision Group", "href": "https://www.vsa.informatik.uni-siegen.de" },
-      { "label": "Prof. Dr. Michael Möller", "href": "https://sites.google.com/site/michaelmoellermath/" },
-      { "label": "Dr. Vladislav Golyanik", "href": "https://people.mpi-inf.mpg.de/~golyanik/" }
-    ]
+    "text": "I started as a PostDoc at the University of Siegen in the <a href='https://www.vsa.informatik.uni-siegen.de' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Computer Vision Group</a> led by <a href='https://sites.google.com/site/michaelmoellermath/' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Prof. Michael Möller</a>, and I am co-supervised by <a href='https://people.mpi-inf.mpg.de/~golyanik/' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Dr. Vladislav Golyanik</a> at the Max Planck Institute for Informatics."
   },
   {
     "date": "23.04.2024",
@@ -62,9 +57,6 @@
   },
   {
     "date": "01.04.2021",
-    "text": "I started as a PhD student at the University of Lübeck in the Institute of Mathematics and Image Computing.",
-    "links": [
-      { "label": "Institute of Mathematics and Image Computing", "href": "https://www.mic.uni-luebeck.de/about-us" }
-    ]
+    "text": "I started as a PhD student at the University of Lübeck in the <a href='https://www.mic.uni-luebeck.de/about-us' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Institute of Mathematics and Image Computing</a>."
   }
 ]
