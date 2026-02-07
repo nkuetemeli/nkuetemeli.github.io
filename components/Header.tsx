@@ -64,7 +64,7 @@ const Header: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 * i }}
               onClick={() => scrollToSection(link.href.substring(1))}
-              className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-gray-600 hover:text-teal-950 transition-colors"
             >
               {link.name}
             </motion.button>
@@ -113,7 +113,7 @@ const Header: React.FC = () => {
                     <button
                         key={link.name}
                         onClick={() => scrollToSection(link.href.substring(1))}
-                  className="text-sm font-medium text-gray-600 hover:text-indigo-600 py-2"
+                  className="text-sm font-medium text-gray-600 hover:text-teal-950 py-2"
                 >
                   {link.name}
                 </button>
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
               {/* Mobile CTA */}
               <a
                 href={`mailto:${EMAIL}`}
-                className="sm:hidden bg-indigo-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-indigo-700 transition-all shadow-sm w-40 mx-auto text-center"
+                className="sm:hidden bg-teal-950 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-teal-700 transition-all shadow-sm w-40 mx-auto text-center"
               >
                 Get in Touch
               </a>

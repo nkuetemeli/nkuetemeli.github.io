@@ -54,7 +54,7 @@ const TeachingSection: React.FC = () => {
                   className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-colors
                     ${selectedItem?.id === item.id
                       ? 'bg-indigo-100 text-indigo-700'
-                      : 'text-indigo-600 hover:bg-indigo-50'
+                      : 'text-teal-950 hover:bg-indigo-50'
                     }`}
                 >
                   {item.title}
@@ -68,7 +68,7 @@ const TeachingSection: React.FC = () => {
                 {visibleCount < teachingItems.length ? (
                   <button
                     onClick={() => setVisibleCount(teachingItems.length)}
-                    className="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-indigo-700 transition"
+                    className="bg-teal-950 text-white font-semibold py-2 px-6 rounded-full hover:bg-indigo-700 transition"
                   >
                     Show more
                   </button>

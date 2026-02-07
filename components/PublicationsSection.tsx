@@ -68,7 +68,7 @@ const PublicationsSection: React.FC = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{pub.title}</h3>
                   <p className="text-gray-600 text-sm" dangerouslySetInnerHTML={{ __html: pub.authors }} />
                   <p className="text-gray-500 text-xs mt-1">{pub.venue}</p>
-                  {pub.award && <p className="text-indigo-600 font-bold text-xs mt-1">{pub.award}</p>}
+                  {pub.award && <p className="text-teal-950 font-bold text-xs mt-1">{pub.award}</p>}
                 </div>
               </a>
             </motion.div>
@@ -84,7 +84,7 @@ const PublicationsSection: React.FC = () => {
           >
             <button
               onClick={() => setShowAll((prev) => !prev)}
-              className="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-lg hover:shadow-indigo-500/50"
+              className="bg-teal-950 text-white font-semibold py-3 px-8 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-lg hover:shadow-indigo-500/50"
             >
               {showAll ? 'Show Less' : 'See More Publications'}
             </button>
