@@ -49,15 +49,15 @@ const AboutSection: React.FC = () => {
 
           <motion.p variants={itemVariants} className="text-gray-600 mb-4">
             Since April 2024, I have held a position as a research assistant for quantum computer vision at the{" "}
-            <a href="https://www.vsa.informatik.uni-siegen.de" className="text-teal-950 hover:underline">
+            <a href="https://www.vsa.informatik.uni-siegen.de" className="text-indigo-600 hover:underline">
               University of Siegen
             </a>{" "}
             in the Computer Vision Group of{" "}
-            <a href="https://sites.google.com/site/michaelmoellermath/" className="text-teal-950 hover:underline">
+            <a href="https://sites.google.com/site/michaelmoellermath/" className="text-indigo-600 hover:underline">
               Prof. Dr. Michael Möller
             </a>
             , and I am co-supervised by{" "}
-            <a href="https://people.mpi-inf.mpg.de/~golyanik/" className="text-teal-950 hover:underline">
+            <a href="https://people.mpi-inf.mpg.de/~golyanik/" className="text-indigo-600 hover:underline">
               Dr. Vladislav Golyanik
             </a>{" "}
             at the Max Planck Institute for Informatics.
@@ -66,12 +66,12 @@ const AboutSection: React.FC = () => {
           <motion.p variants={itemVariants} className="text-gray-600 mb-8">
             I received my PhD on quantum algorithms for image processing and my Master in computational life science
             from the University of Lübeck, both under the supervision of{" "}
-            <a href="https://www.lellmann.net/work/" className="text-teal-950 hover:underline">
+            <a href="https://www.lellmann.net/work/" className="text-indigo-600 hover:underline">
               Prof. Dr. Jan Lellmann
             </a>
             . I received my Bachelor in computer science from the University of Dschang under the supervision of{" "}
             <a href="https://www.researchgate.net/profile/Maurice-Tchoupe-Tchendji"
-               className="text-teal-950 hover:underline">
+               className="text-indigo-600 hover:underline">
               Prof. Dr. Maurice Tchoupe Tchendji.
             </a>
           </motion.p>
@@ -90,7 +90,7 @@ const AboutSection: React.FC = () => {
                       animate={{opacity: 1, y: 0}}
                       exit={{opacity: 0, y: 20}}
                       transition={{duration: 0.4, delay: index * 0.05}}
-                      className="border-l-4 border-teal-500 pl-4"
+                      className="border-l-4 border-indigo-500 pl-4"
                   >
                     <span className="text-sm text-gray-500">{item.date}</span>
 
@@ -107,7 +107,7 @@ const AboutSection: React.FC = () => {
                                     href={link.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-teal-950 hover:underline ml-1"
+                                    className="text-indigo-600 hover:underline ml-1"
                                 >
                                   [{link.label}]
                                 </a>
@@ -126,7 +126,7 @@ const AboutSection: React.FC = () => {
               <motion.div variants={itemVariants} className="mt-6 flex justify-center lg:justify-start">
                 <button
                     onClick={() => setShowAllNews((prev) => !prev)}
-                    className="px-5 py-2 text-sm font-medium text-teal-950 border border-teal-950 rounded-full hover:bg-teal-950 hover:text-white transition"
+                    className="px-5 py-2 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
                 >
                   {showAllNews ? "Show less" : "Show all news"}
                 </button>
@@ -143,7 +143,7 @@ const AboutSection: React.FC = () => {
             }}
         >
           <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full -rotate-12"/>
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-full -rotate-12"/>
             <img
                 src={ProfileAvatar}
                 alt="Natacha Kuete Meli"

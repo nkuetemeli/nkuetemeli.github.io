@@ -60,7 +60,7 @@ const TalkSection: React.FC = () => {
                     </div>
                     <button
                       onClick={() => toggleAbstract(talk.permalink)}
-                      className="mt-3 md:mt-0 px-4 py-2 text-sm font-medium text-teal-950 border border-teal-950 rounded-full hover:bg-teal-950 hover:text-white transition"
+                      className="mt-3 md:mt-0 px-4 py-2 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
                     >
                       {isExpanded ? 'Hide Abstract' : 'Show Abstract'}
                     </button>
@@ -93,7 +93,7 @@ const TalkSection: React.FC = () => {
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-teal-950 hover:underline text-sm"
+                                className="text-indigo-600 hover:underline text-sm"
                               >
                                 [{link.label}]
                               </a>
@@ -114,7 +114,7 @@ const TalkSection: React.FC = () => {
           <motion.div variants={itemVariants} className="mt-12 flex justify-center">
             <button
               onClick={() => setShowAll((prev) => !prev)}
-              className="px-6 py-3 text-sm font-medium text-teal-950 border border-teal-950 rounded-full hover:bg-teal-950 hover:text-white transition"
+              className="px-6 py-3 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
             >
               {showAll ? 'Show Less' : 'Show All Talks'}
             </button>

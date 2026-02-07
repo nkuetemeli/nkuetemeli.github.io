@@ -40,7 +40,7 @@ const ConciseCVCards: React.FC = () => {
           {/* Education Card */}
           <motion.div
               variants={itemVariants}
-              className="bg-teal-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
           >
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Education</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
@@ -56,7 +56,7 @@ const ConciseCVCards: React.FC = () => {
           {/* Work Experience Card */}
           <motion.div
               variants={itemVariants}
-              className="bg-teal-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
           >
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Academic Experience</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
@@ -72,7 +72,7 @@ const ConciseCVCards: React.FC = () => {
           {/* Profile Card (Languages + Engagements) */}
             <motion.div
                 variants={itemVariants}
-                className="bg-teal-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+                className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
             >
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Profile</h3>
 
@@ -112,12 +112,12 @@ const ConciseCVCards: React.FC = () => {
             {/* Reviewer Activities Card */}
             <motion.div
                 variants={itemVariants}
-                className="bg-teal-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+                className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
             >
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Reviewer Activities</h3>
                 <div className="flex flex-wrap gap-2">
                 {CVData.reviewerActivities.map((rev, idx) => (
-                  <span key={idx} className="bg-teal-100 text-teal-700 font-medium text-xs px-3 py-1 rounded-full">
+                  <span key={idx} className="bg-indigo-100 text-indigo-700 font-medium text-xs px-3 py-1 rounded-full">
                     {rev}
                   </span>
               ))}
@@ -132,7 +132,7 @@ const ConciseCVCards: React.FC = () => {
                   href={CVData.download.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="--color-teal-950 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors"
+                  className="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-colors"
               >
                 {CVData.download.label}
               </a>
