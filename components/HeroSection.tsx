@@ -68,7 +68,7 @@ const ServiceCard: React.FC = () => (
      <motion.div variants={{...itemVariants, ...floatingVariants(0.8)}} className="absolute mt-20 md:1 top-1/2 -translate-y-1/2 -left-8 md:-left-12 w-48">
         <div className="bg-white/80 backdrop-blur-lg p-3 rounded-2xl shadow-lg flex items-center gap-3">
             <div className="bg-indigo-100 p-2 rounded-full">
-                <Phone className="w-5 h-5 text-indigo-600" />
+                <Linkedin className="w-5 h-5 text-indigo-600" />
             </div>
             <div>
                 <p className="text-sm font-bold text-gray-800">Available for collaborations</p>
