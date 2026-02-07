@@ -132,7 +132,7 @@ const ConciseCVCards: React.FC = () => {
                   href={CVData.download.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors"
+                  className="--color-teal-950 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition-colors"
               >
                 {CVData.download.label}
               </a>
