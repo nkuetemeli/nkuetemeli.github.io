@@ -90,7 +90,7 @@ const AboutSection: React.FC = () => {
                       animate={{opacity: 1, y: 0}}
                       exit={{opacity: 0, y: 20}}
                       transition={{duration: 0.4, delay: index * 0.05}}
-                      className="border-l-4 border-indigo-500 pl-4"
+                      className="border-l-4 border-teal-500 pl-4"
                   >
                     <span className="text-sm text-gray-500">{item.date}</span>
 
@@ -143,7 +143,7 @@ const AboutSection: React.FC = () => {
             }}
         >
           <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-full -rotate-12"/>
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-700 rounded-full -rotate-12"/>
             <img
                 src={ProfileAvatar}
                 alt="Natacha Kuete Meli"
