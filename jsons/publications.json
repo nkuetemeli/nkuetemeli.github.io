@@ -43,5 +43,37 @@
     "project": "https://4dqv.mpi-inf.mpg.de/QuCOOP/",
     "bibtex": true,
     "award": "[CVPR Highlight]"
+  },
+  {
+    "id": 4,
+    "title": "Quantum Multiple Rotation Averaging",
+    "permalink": "/publication/paper-title-number-4",
+    "excerpt": "Shuteng Wang, **Natacha Kuete Meli**, Michael Möller, Vladislav Golyanik",
+    "date": "2026-03-01",
+    "venue": "International Conference on 3D Vision (3DV)",
+    "paperurl": "https://openreview.net/pdf?id=JVxlXIcjD0",
+    "teaser": "/files/paper4/paper4_banner.png",
+    "poster": "/files/paper4/paper4_poster.pdf",
+    "authors": "Shuteng Wang, <b>Natacha Kuete Meli</b>, Michael Möller, Vladislav Golyanik",
+    "arxiv": "https://arxiv.org/pdf/2602.10115",
+    "code": "https://github.com/shutengW/Quantum-Multiple-Rotation-Averaging",
+    "project": "https://4dqv.mpi-inf.mpg.de/QMRA/",
+    "bibtex": true
+  },
+  {
+    "id": 5,
+    "title": "Layered Quantum Architecture Search for 3D Point Cloud Classification",
+    "permalink": "/publication/paper-title-number-5",
+    "excerpt": "**Natacha Kuete Meli**, Jovita Lukasik, Vladislav Golyanik, Michael Moeller",
+    "date": "2025-03-01",
+    "venue": "International Conference on 3D Vision (3DV)",
+    "paperurl": "https://openreview.net/pdf?id=GfTl5ToYrn",
+    "teaser": "/files/paper5/paper5_banner.png",
+    "poster": "/files/paper5/paper5_poster.pdf",
+    "authors": "<b>Natacha Kuete Meli</b>, Jovita Lukasik, Vladislav Golyanik, Michael Moeller",
+    "arxiv": "https://arxiv.org/abs/2603.20024",
+    "code": "https://github.com/nkuetemeli/LQAS",
+    "project": "https://4dqv.mpi-inf.mpg.de/LQAS/",
+    "bibtex": true
   }
 ]
