@@ -121,9 +121,7 @@ const PublicationsSection: React.FC = () => {
                 initial="hidden"
                 animate="visible"
                 variants={itemVariants}
-                className={`relative bg-white rounded-xl shadow-md overflow-hidden group transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2
-                  ${isFeatured ? 'ring-2 ring-indigo-500/70' : ''}
-                `}
+                className={`relative bg-white rounded-xl shadow-md overflow-hidden group transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2`}
               >
                 {/* Featured badge */}
                 {isFeatured && (
