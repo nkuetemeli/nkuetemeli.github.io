@@ -23,17 +23,13 @@ const itemVariants: Variants = {
 const PublicationsSection: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
 
-  // Sort publications by newest first
   const sortedPublications = [...PublicationsData].sort((a, b) => b.id - a.id);
 
-  // Split featured vs regular
   const featuredPublications = sortedPublications.filter((pub) => pub.featured);
-  const regularPublications = sortedPublications.filter((pub) => !pub.featured);
 
-  // Control visible regular publications
-  const visibleRegularPublications = showAll
-    ? regularPublications
-    : regularPublications.slice(0, 3);
+  const visiblePublications = showAll
+    ? sortedPublications
+    : sortedPublications.slice(0, 3);
 
   return (
     <section id="publications" className="bg-[#f0f4ff] py-20 sm:py-28">
@@ -59,68 +55,59 @@ const PublicationsSection: React.FC = () => {
           Here are some of my recent publications. Click the links to read the full paper.
         </motion.p>
 
-        {/* ⭐ Featured Publications (List Style) */}
+        {/* ⭐ Inline Featured (compact) */}
         {featuredPublications.length > 0 && (
           <motion.div
             variants={itemVariants}
-            className="mb-16 text-left max-w-3xl mx-auto"
+            className="mb-12 text-left max-w-4xl mx-auto"
           >
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Featured Publications
-            </h3>
-
-            <ul className="space-y-6">
-              {featuredPublications.map((pub) => (
-                <li
-                  key={pub.permalink}
-                  className="border-l-4 border-indigo-500 pl-4"
-                >
+            <p className="text-sm text-gray-500">
+              <span className="font-semibold text-indigo-600">Featured&nbsp;||</span>{' '}
+              {featuredPublications.map((pub, i) => (
+                <span key={pub.permalink}>
                   <a
                     href={pub.paperurl || '#'}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group"
+                    className="hover:text-indigo-600 transition"
                   >
-                    <p className="text-lg font-semibold text-gray-800 group-hover:text-indigo-600 transition">
-                      {pub.title}
-                    </p>
-
-                    <p
-                      className="text-sm text-gray-600"
-                      dangerouslySetInnerHTML={{ __html: pub.authors }}
-                    />
-
-                    <p className="text-xs text-gray-500 mt-1">
-                      {pub.venue}
-                      {pub.award && ` • ${pub.award}`}
-                    </p>
+                    {pub.title}
                   </a>
-                </li>
+                  {i < featuredPublications.length - 1 && ' • '}
+                </span>
               ))}
-            </ul>
+            </p>
           </motion.div>
         )}
 
-        {/* 📚 Regular Publications (Grid) */}
+        {/* 📚 Publications Grid */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           layout
           variants={containerVariants}
         >
-          {visibleRegularPublications.map((pub) => (
-            <motion.div
-              key={pub.permalink}
-              layout
-              initial="hidden"
-              animate="visible"
-              variants={itemVariants}
-              className="relative bg-white rounded-xl shadow-md overflow-hidden group transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2"
-            >
-              <a
-                href={pub.paperurl || '#'}
-                target="_blank"
-                rel="noopener noreferrer"
+          {visiblePublications.map((pub) => {
+            const isFeatured = pub.featured;
+
+            return (
+              <motion.div
+                key={pub.permalink}
+                layout
+                initial="hidden"
+                animate="visible"
+                variants={itemVariants}
+                className={`relative bg-white rounded-xl shadow-md overflow-hidden group transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2
+                  ${isFeatured ? 'ring-2 ring-indigo-500/70' : ''}
+                `}
               >
+                {/* Featured badge */}
+                {isFeatured && (
+                  <div className="absolute top-3 left-3 z-10 bg-indigo-600 text-white text-xs px-2 py-1 rounded-full shadow">
+                    Featured
+                  </div>
+                )}
+
+                {/* Image */}
                 <div className="relative h-56">
                   {pub.teaser && (
                     <img
@@ -132,6 +119,7 @@ const PublicationsSection: React.FC = () => {
                   <div className="absolute inset-0 bg-black/20" />
                 </div>
 
+                {/* Content */}
                 <div className="p-6 text-left">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {pub.title}
@@ -151,14 +139,66 @@ const PublicationsSection: React.FC = () => {
                       {pub.award}
                     </p>
                   )}
+
+                  {/* Links */}
+                  <div className="mt-4 flex flex-wrap gap-3 text-sm">
+                    {pub.paperurl && (
+                      <a
+                        href={pub.paperurl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-indigo-600 hover:underline"
+                      >
+                        Paper
+                      </a>
+                    )}
+
+                    {pub.arxiv && (
+                      <a
+                        href={pub.arxiv}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:underline"
+                      >
+                        arXiv
+                      </a>
+                    )}
+
+                    {pub.code && (
+                      <a
+                        href={pub.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:underline"
+                      >
+                        Code
+                      </a>
+                    )}
+
+                    {/* ⭐ Highlight project for featured */}
+                    {pub.project && (
+                      <a
+                        href={pub.project}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`font-medium ${
+                          isFeatured
+                            ? 'text-indigo-700 underline'
+                            : 'text-gray-600 hover:underline'
+                        }`}
+                      >
+                        Project
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </a>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </motion.div>
 
-        {/* 🔘 Show More Button */}
-        {regularPublications.length > 3 && (
+        {/* 🔘 Show More */}
+        {sortedPublications.length > 3 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
