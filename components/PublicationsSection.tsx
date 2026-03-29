@@ -69,25 +69,14 @@ const PublicationsSection: React.FC = () => {
           <span className="text-gray-800 font-medium">{pub.title}</span>
 
           <div className="inline-flex gap-2 ml-2 text-sm">
-            {pub.paperurl && (
-              <a
-                href={pub.paperurl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-600 hover:underline"
-              >
-                [paper]
-              </a>
-            )}
-
-            {pub.project && (
+            Visit {pub.project && (
               <a
                 href={pub.project}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-700 font-medium hover:underline"
               >
-                [project]
+                project page.
               </a>
             )}
           </div>
@@ -158,52 +147,52 @@ const PublicationsSection: React.FC = () => {
                     )}
 
                     {/* Links */}
-                    <div className="mt-4 flex flex-wrap gap-3 text-sm">
-                      {pub.paperurl && (
-                          <a
-                              href={pub.paperurl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-indigo-600 hover:underline"
-                          >
-                            Paper
-                          </a>
-                      )}
+                    {/* Links */}
+<div className="mt-auto pt-4 flex flex-wrap gap-3 text-sm">
+  {pub.paperurl && (
+    <a
+      href={pub.paperurl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-indigo-600 hover:underline"
+    >
+      Paper
+    </a>
+  )}
 
-                      {pub.arxiv && (
-                          <a
-                              href={pub.arxiv}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-indigo-600 hover:underline"
-                          >
-                            arXiv
-                          </a>
-                      )}
+  {pub.arxiv && (
+    <a
+      href={pub.arxiv}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-indigo-600 hover:underline"
+    >
+      arXiv
+    </a>
+  )}
 
-                      {pub.code && (
-                          <a
-                              href={pub.code}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-indigo-600 hover:underline"
-                          >
-                            Code
-                          </a>
-                      )}
+  {pub.code && (
+    <a
+      href={pub.code}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-indigo-600 hover:underline"
+    >
+      Code
+    </a>
+  )}
 
-                      {/* ⭐ Highlight project for featured */}
-                      {pub.project && (
-                          <a
-                              href={pub.project}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-indigo-600 hover:underline"
-                          >
-                            Project
-                          </a>
-                      )}
-                    </div>
+  {pub.project && (
+    <a
+      href={pub.project}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-indigo-600 hover:underline"
+    >
+      Project
+    </a>
+  )}
+</div>
                   </div>
                 </motion.div>
             );
