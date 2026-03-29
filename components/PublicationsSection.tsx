@@ -56,7 +56,7 @@ const PublicationsSection: React.FC = () => {
 
           {featuredPublications.length > 0 && (
               <>
-                {' '}Featured work includes{' '}
+                {' '}Highlighted works:{' '}
                 {featuredPublications.map((pub, i) => (
                     <span key={pub.permalink}>
           <span className="text-gray-800 font-medium">{pub.title}</span>
@@ -83,7 +83,7 @@ const PublicationsSection: React.FC = () => {
                           </a>
                       )}
 
-                      {i < featuredPublications.length - 1 && ', '}
+                      {i < featuredPublications.length - 1 && '; '}
         </span>
                 ))}
                 .
