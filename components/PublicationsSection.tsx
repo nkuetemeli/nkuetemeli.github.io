@@ -68,7 +68,7 @@ const PublicationsSection: React.FC = () => {
           >
 
               <a
-                  href={pub.title}
+                  href={pub.paperurl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-700 font-medium hover:underline"
