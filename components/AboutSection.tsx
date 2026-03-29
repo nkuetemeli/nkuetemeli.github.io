@@ -48,7 +48,7 @@ const AboutSection: React.FC = () => {
           </motion.h2>
 
           <motion.p variants={itemVariants} className="text-gray-600 mb-4">
-            Since April 2024, I have held a position as a research assistant for quantum computer vision at the{" "}
+            Since April 2024, I have held a position as a post-doctorate research assistant for quantum computer vision at the{" "}
             <a href="https://www.vsa.informatik.uni-siegen.de" className="text-indigo-600 hover:underline">
               University of Siegen
             </a>{" "}

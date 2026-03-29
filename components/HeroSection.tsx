@@ -112,8 +112,8 @@ const HeroSection: React.FC = () => {
                         </motion.h1>
                         <motion.p variants={itemVariants}
                                   className="mt-6 text-base sm:text-lg text-white/80 max-w-lg mx-auto lg:mx-0">
-                            I specialize in quantum computing for image processing and computer vision, developing
-                            algorithms for optimization and advancing quantum machine learning.
+                            I specialize in quantum computing for computer vision, developing
+                            quantum algorithms for optimization and advancing quantum machine learning.
                         </motion.p>
                         <motion.div variants={itemVariants}
                                     className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
