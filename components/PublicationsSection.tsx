@@ -61,37 +61,45 @@ const PublicationsSection: React.FC = () => {
       variants={itemVariants}
       className="max-w-2xl mx-auto mb-12 text-left space-y-3"
     >
-      {featuredPublications.map((pub) => (
-        <li
-          key={pub.permalink}
-          className="border-l-4 border-indigo-500 pl-4"
-        >
-          <span className="text-gray-800 font-medium">{pub.title}</span>
+      Featured: {featuredPublications.map((pub) => (
+          <li
+              key={pub.permalink}
+              className="border-l-4 border-indigo-500 pl-4"
+          >
 
-          <div className="inline-flex gap-2 ml-2 text-sm">
-            Visit {pub.project && (
               <a
-                href={pub.project}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-700 font-medium hover:underline"
+                  href={pub.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-700 font-medium hover:underline"
               >
-                project page.
+                  <span className="text-gray-800 font-medium">{pub.title}</span>
               </a>
-            )}
-          </div>
-        </li>
-      ))}
+
+                  <div className="inline-flex gap-2 ml-2 text-sm">
+                      Visit {pub.project && (
+                      <a
+                          href={pub.project}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-indigo-700 font-medium hover:underline"
+                      >
+                          project page.
+                      </a>
+                  )}
+                  </div>
+          </li>
+          ))}
     </motion.ul>
   )}
 </>
 
 
-        {/* 📚 Publications Grid */}
-        <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            layout
-            variants={containerVariants}
+          {/* 📚 Publications Grid */}
+          <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              layout
+              variants={containerVariants}
         >
           {visiblePublications.map((pub) => {
             const isFeatured = pub.featured;
