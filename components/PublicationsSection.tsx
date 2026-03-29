@@ -55,25 +55,50 @@ const PublicationsSection: React.FC = () => {
           Here are some of my recent publications. Click the links to read the full paper.
         </motion.p>
 
-        {/* ⭐ Inline Featured (compact) */}
+        {/* ⭐ Inline Featured (compact with links) */}
         {featuredPublications.length > 0 && (
           <motion.div
             variants={itemVariants}
             className="mb-12 text-left max-w-4xl mx-auto"
           >
-            <p className="text-sm text-gray-500">
-              <span className="font-semibold text-indigo-600">Featured&nbsp;||</span>{' '}
+            <p className="text-sm text-gray-500 flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span className="font-semibold text-indigo-600 mr-1">
+                Featured&nbsp;||
+              </span>
+
               {featuredPublications.map((pub, i) => (
-                <span key={pub.permalink}>
-                  <a
-                    href={pub.paperurl || '#'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-indigo-600 transition"
-                  >
-                    {pub.title}
-                  </a>
-                  {i < featuredPublications.length - 1 && ' • '}
+                <span key={pub.permalink} className="flex items-center gap-1">
+                  {/* Title */}
+                  <span className="text-gray-700">{pub.title}</span>
+
+                  {/* Paper link */}
+                  {pub.paperurl && (
+                    <a
+                      href={pub.paperurl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-600 hover:underline text-xs"
+                    >
+                      [paper]
+                    </a>
+                  )}
+
+                  {/* Project link (highlighted slightly more) */}
+                  {pub.project && (
+                    <a
+                      href={pub.project}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-700 font-medium hover:underline text-xs"
+                    >
+                      [project]
+                    </a>
+                  )}
+
+                  {/* Separator */}
+                  {i < featuredPublications.length - 1 && (
+                    <span className="mx-1 text-gray-400">•</span>
+                  )}
                 </span>
               ))}
             </p>
