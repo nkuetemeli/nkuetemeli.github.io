@@ -75,5 +75,21 @@
     "code": "https://github.com/nkuetemeli/LQAS",
     "project": "https://4dqv.mpi-inf.mpg.de/LQAS/",
     "bibtex": true
+  },
+  {
+    "id": 6,
+    "title": "Quantum-enhanced Computer Vision: Going Beyond Classical Algorithms",
+    "permalink": "/publication/paper-title-number-6",
+    "excerpt": "**Natacha Kuete Meli**, Shuteng Wang, Marcel Seelbach Benkner, Michele Sasdelli, Tat-Jun Chin, Tolga Birdal, Michael Moeller, Vladislav Golyanik",
+    "date": "2025-10-01",
+    "venue": "ArXiv (Currently under review)",
+    "paperurl": "https://arxiv.org/pdf/2510.07317?",
+    "teaser": "/files/paper6/paper6_banner.png",
+    "poster": "/files/paper6/paper6_poster.pdf",
+    "authors": "<b>Natacha Kuete Meli</b>, Shuteng Wang, Marcel Seelbach Benkner, Michele Sasdelli, Tat-Jun Chin, Tolga Birdal, Michael Moeller, Vladislav Golyanik",
+    "arxiv": "https://arxiv.org/pdf/2510.07317?",
+    "project": "https://4dqv.mpi-inf.mpg.de/QeCV/",
+    "bibtex": true,
+    "featured": true
   }
 ]

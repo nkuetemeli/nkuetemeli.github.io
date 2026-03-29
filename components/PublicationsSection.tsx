@@ -23,10 +23,17 @@ const itemVariants: Variants = {
 const PublicationsSection: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
 
-  const visiblePublications = showAll
-  ? [...PublicationsData].sort((a, b) => b.id - a.id)
-  : [...PublicationsData].sort((a, b) => b.id - a.id).slice(0, 3);
+  // Sort publications by newest first
+  const sortedPublications = [...PublicationsData].sort((a, b) => b.id - a.id);
 
+  // Split featured vs regular
+  const featuredPublications = sortedPublications.filter((pub) => pub.featured);
+  const regularPublications = sortedPublications.filter((pub) => !pub.featured);
+
+  // Control visible regular publications
+  const visibleRegularPublications = showAll
+    ? regularPublications
+    : regularPublications.slice(0, 3);
 
   return (
     <section id="publications" className="bg-[#f0f4ff] py-20 sm:py-28">
@@ -37,20 +44,70 @@ const PublicationsSection: React.FC = () => {
         viewport={{ once: true, amount: 0.3 }}
         variants={containerVariants}
       >
-        <motion.h2 variants={itemVariants} className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        {/* Title */}
+        <motion.h2
+          variants={itemVariants}
+          className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
+        >
           My Publications
         </motion.h2>
 
-        <motion.p variants={itemVariants} className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12">
+        <motion.p
+          variants={itemVariants}
+          className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12"
+        >
           Here are some of my recent publications. Click the links to read the full paper.
         </motion.p>
 
+        {/* ⭐ Featured Publications (List Style) */}
+        {featuredPublications.length > 0 && (
+          <motion.div
+            variants={itemVariants}
+            className="mb-16 text-left max-w-3xl mx-auto"
+          >
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              Featured Publications
+            </h3>
+
+            <ul className="space-y-6">
+              {featuredPublications.map((pub) => (
+                <li
+                  key={pub.permalink}
+                  className="border-l-4 border-indigo-500 pl-4"
+                >
+                  <a
+                    href={pub.paperurl || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <p className="text-lg font-semibold text-gray-800 group-hover:text-indigo-600 transition">
+                      {pub.title}
+                    </p>
+
+                    <p
+                      className="text-sm text-gray-600"
+                      dangerouslySetInnerHTML={{ __html: pub.authors }}
+                    />
+
+                    <p className="text-xs text-gray-500 mt-1">
+                      {pub.venue}
+                      {pub.award && ` • ${pub.award}`}
+                    </p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+
+        {/* 📚 Regular Publications (Grid) */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           layout
           variants={containerVariants}
         >
-          {visiblePublications.map((pub) => (
+          {visibleRegularPublications.map((pub) => (
             <motion.div
               key={pub.permalink}
               layout
@@ -59,23 +116,49 @@ const PublicationsSection: React.FC = () => {
               variants={itemVariants}
               className="relative bg-white rounded-xl shadow-md overflow-hidden group transform transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2"
             >
-              <a href={pub.paperurl || '#'} target="_blank" rel="noopener noreferrer">
+              <a
+                href={pub.paperurl || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="relative h-56">
-                  {pub.teaser && <img src={pub.teaser} alt={pub.title} className="w-full h-full object-contain" />}
+                  {pub.teaser && (
+                    <img
+                      src={pub.teaser}
+                      alt={pub.title}
+                      className="w-full h-full object-contain"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-black/20" />
                 </div>
+
                 <div className="p-6 text-left">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{pub.title}</h3>
-                  <p className="text-gray-600 text-sm" dangerouslySetInnerHTML={{ __html: pub.authors }} />
-                  <p className="text-gray-500 text-xs mt-1">{pub.venue}</p>
-                  {pub.award && <p className="text-indigo-600 font-bold text-xs mt-1">{pub.award}</p>}
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {pub.title}
+                  </h3>
+
+                  <p
+                    className="text-gray-600 text-sm"
+                    dangerouslySetInnerHTML={{ __html: pub.authors }}
+                  />
+
+                  <p className="text-gray-500 text-xs mt-1">
+                    {pub.venue}
+                  </p>
+
+                  {pub.award && (
+                    <p className="text-indigo-600 font-bold text-xs mt-1">
+                      {pub.award}
+                    </p>
+                  )}
                 </div>
               </a>
             </motion.div>
           ))}
         </motion.div>
 
-        {PublicationsData.length > 3 && (
+        {/* 🔘 Show More Button */}
+        {regularPublications.length > 3 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
