@@ -41,5 +41,19 @@
     "links": [
       { "label": "Slides", "href": "/files/talk3/qc_eccv2024_KueteMeli.pdf" }
     ]
+  },
+  {
+    "id": 4,
+    "title": "Quantum Hamiltonian Descent for Rigid Image Registration",
+    "collection": "talks",
+    "type": "Talk",
+    "permalink": "/talks/talk-4",
+    "venue": "Imperial College London, Circle Group",
+    "date": "2025-09-18",
+    "location": "London, UK",
+    "summary": "Energy-based formulations of the image registration problem are notoriously non-convex and traditionally require a combination of various techniques to obtain a good solution. In this work, we explore how a recent result from quantum computing can help with this task. Specifically, we show how to apply Quantum Hamiltonian Descent to the image registration problem. Numerical simulations on real-world data show that the method allows to recover good global minima despite the strong non-convexity, without relying on any heuristics or meta-strategies for aiding the optimization.",
+    "links": [
+      { "label": "Slides(coming soon)", "href": "#" }
+    ]
   }
 ]
