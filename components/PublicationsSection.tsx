@@ -48,48 +48,54 @@ const PublicationsSection: React.FC = () => {
           My Publications
         </motion.h2>
 
-        <motion.p
-            variants={itemVariants}
-            className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12"
-        >
-          Here are some of my recent publications.
+<>
+  <motion.p
+    variants={itemVariants}
+    className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6"
+  >
+    Here are some of my recent publications.
+  </motion.p>
 
-          {featuredPublications.length > 0 && (
-              <>
-                {' '}Highlighted works:{' '}
-                {featuredPublications.map((pub, i) => (
-                    <span key={pub.permalink}>
+  {featuredPublications.length > 0 && (
+    <motion.ul
+      variants={itemVariants}
+      className="max-w-2xl mx-auto mb-12 text-left space-y-3"
+    >
+      {featuredPublications.map((pub) => (
+        <li
+          key={pub.permalink}
+          className="border-l-4 border-indigo-500 pl-4"
+        >
           <span className="text-gray-800 font-medium">{pub.title}</span>
 
-                      {pub.paperurl && (
-                          <a
-                              href={pub.paperurl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="ml-1 text-indigo-600 hover:underline text-sm"
-                          >
-                            [paper]
-                          </a>
-                      )}
+          <div className="inline-flex gap-2 ml-2 text-sm">
+            {pub.paperurl && (
+              <a
+                href={pub.paperurl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:underline"
+              >
+                [paper]
+              </a>
+            )}
 
-                      {pub.project && (
-                          <a
-                              href={pub.project}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="ml-1 text-indigo-700 font-medium hover:underline text-sm"
-                          >
-                            [project]
-                          </a>
-                      )}
-
-                      {i < featuredPublications.length - 1 && '; '}
-        </span>
-                ))}
-                .
-              </>
-          )}
-        </motion.p>
+            {pub.project && (
+              <a
+                href={pub.project}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-700 font-medium hover:underline"
+              >
+                [project]
+              </a>
+            )}
+          </div>
+        </li>
+      ))}
+    </motion.ul>
+  )}
+</>
 
 
         {/* 📚 Publications Grid */}
