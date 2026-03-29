@@ -146,7 +146,7 @@
     "venue": "University of Siegen",
     "date": "2025-01-01",
     "location": "Siegen, Germany",
-    "summary": "Winter term 2025 (~ 50 students per semester).",
+    "summary": "Winter terms 2025, 2026 (~ 50 students per semester).",
     "topics": [
       "Supervised machine learning as an interpolation problem",
       "Simple network architectures: Fully connected layers, rectified linear units, sigmoids, softmax",
@@ -168,7 +168,7 @@
     "title": "Nonlinear Convex Optimization with Applications in Imaging and Vision",
     "collection": "teaching",
     "type": "Undergraduate and Graduate course",
-    "permalink": "/teaching/teaching-8",
+    "permalink": "/teaching/teaching-9",
     "venue": "University of Siegen",
     "date": "2025-01-04",
     "location": "Siegen, Germany",
@@ -184,6 +184,30 @@
       "Nonsmooth Newton methods: NCP, patchwise, semismooth",
       "Primal-dual hybrid gradient methods",
       "Proximal Newton methods for unconstrained problems"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Introduction to Quantum Computer Programming",
+    "collection": "teaching",
+    "type": "Undergraduate and Graduate course",
+    "permalink": "/teaching/teaching-10",
+    "venue": "University of Siegen",
+    "date": "2026-03-09",
+    "location": "Siegen, Germany",
+    "summary": "Winter terms 2025, 2026 (~ 10 students per semester).",
+    "topics": [
+      "Hands‑on introduction to quantum computing fundamentals",
+      "PennyLane installation and workflow",
+      "Algebra, Dirac notation, tensor products",
+      "Beam splitter and interferometer",
+      "Bell states and entanglement",
+      "Deutsch–Jozsa algorithm",
+      "Quantum teleportation",
+      "Grover’s search algorithm",
+      "Quantum phase estimation",
+      "Shor’s factoring algorithm",
+      "Daily programming exercises and circuit simulations"
     ]
   }
 ]
