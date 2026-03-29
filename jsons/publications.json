@@ -71,7 +71,7 @@
     "teaser": "/files/paper5/paper5_banner.png",
     "poster": "/files/paper5/paper5_poster.pdf",
     "authors": "<b>Natacha Kuete Meli</b>, Jovita Lukasik, Vladislav Golyanik, Michael Moeller",
-    "arxiv": "https://arxiv.org/abs/2603.20024",
+    "arxiv": "https://arxiv.org/pdf/2603.20024",
     "code": "https://github.com/nkuetemeli/LQAS",
     "project": "https://4dqv.mpi-inf.mpg.de/LQAS/",
     "bibtex": true
