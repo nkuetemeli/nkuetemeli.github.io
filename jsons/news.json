@@ -1,14 +1,14 @@
 [
   {
-    "date": "31.3.2026",
-    "text": "Our paper <b>Quantum Hamiltonian Descent for Rigid Image Registration</b> got accepted at ICPR 2026",
+    "date": "31.11.2025",
+    "text": "Our paper “Quantum Hamiltonian Descent for Rigid Image Registration” got accepted at ICPR 2026",
     "links": [
       { "label": "arXiv", "href": "#"}
     ]
   },
   {
     "date": "5.11.2025",
-    "text": "2 papers accepted at 3DV 2026: <lu><li>• Quantum Multiple Rotation Averaging</li> <li>• Layered Quantum Architecture Search for 3D Point Cloud Classification</li></lu>",
+    "text": "Glad to co-author 2 papers accepted at 3DV 2026: <lu><li>• Quantum Multiple Rotation Averaging</li> <li>• Layered Quantum Architecture Search for 3D Point Cloud Classification</li></lu>",
     "links": [
       { "label": "arXiv", "href": "https://arxiv.org/pdf/2602.10115"},
       { "label": "arXiv", "href": "https://arxiv.org/pdf/2603.20024"}
@@ -27,14 +27,14 @@
   },
   {
     "date": "26.02.2025",
-    "text": "Our paper <b>QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers</b> got accepted as a highlight at CVPR 2025.",
+    "text": "Our paper “QuCOOP: A Versatile Framework for Solving Composite and Binary-Parametrised Problems on Quantum Annealers” got accepted as a highlight at CVPR 2025.",
     "links": [
       { "label": "arXiv", "href": "https://arxiv.org/abs/2503.19718v1" }
     ]
   },
   {
     "date": "29.09.2024",
-    "text": "I was honoured to give a talk titled <b>Quantum Binary Optimization</b> at the ECCV 2024 workshop on Quantum Computer Vision and Machine Learning (QCVML).",
+    "text": "I was honoured to give a talk titled “Quantum Binary Optimization” at the ECCV 2024 workshop on Quantum Computer Vision and Machine Learning (QCVML).",
     "links": [
       { "label": "QCVML", "href": "https://qcvml.github.io" },
       { "label": "Slides", "href": "/files/qc_eccv2024_KueteMeli.pdf" }
@@ -46,11 +46,11 @@
   },
   {
     "date": "23.04.2024",
-    "text": "I successfully defended my PhD dissertation titled <b>Quantum Algorithms for Binary Problems with Applications to Image Processing</b>."
+    "text": "I successfully defended my PhD dissertation titled “Quantum Algorithms for Binary Problems with Applications to Image Processing”."
   },
   {
     "date": "05.03.2024",
-    "text": "I gave a talk titled <b>Quantum Computing for Binary Optimization and Beyond: Bridging Classical and Quantum Landscapes</b> to the Computer Vision Group of the University of Siegen.",
+    "text": "I gave a talk titled “Quantum Computing for Binary Optimization and Beyond: Bridging Classical and Quantum Landscapes” to the Computer Vision Group of the University of Siegen.",
     "links": [
       { "label": "Computer Vision Group", "href": "https://www.vsa.informatik.uni-siegen.de" },
       { "label": "Slides", "href": "../files/qc_siegen_KueteMeli.pdf" }
@@ -58,14 +58,14 @@
   },
   {
     "date": "12.06.2023",
-    "text": "Our paper <b>A universal quantum algorithm for weighted maximum cut and Ising problems</b> got accepted for publication in Springer Quantum Information Processing.",
+    "text": "Our paper “A universal quantum algorithm for weighted maximum cut and Ising problems” got accepted for publication in Springer Quantum Information Processing.",
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1007/s11128-023-04025-x" }
     ]
   },
   {
     "date": "28.02.2022",
-    "text": "Our paper <b>An Iterative Quantum Approach for Transformation Estimation from Point Sets</b> got accepted at CVPR 2022.",
+    "text": "Our paper “An Iterative Quantum Approach for Transformation Estimation from Point Sets” got accepted at CVPR 2022.",
     "links": [
       { "label": "DOI", "href": "https://doi.org/10.1109/CVPR52688.2022.00061" }
     ]
