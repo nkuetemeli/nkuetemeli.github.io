@@ -22,7 +22,7 @@
     "date": "18.09.2025",
     "text": "I was honoured to give a talk in Prof. Tolga Birdal’s CIRCLE Group at Imperial College London.",
     "links": [
-      { "label": "Slides", "href": "/files/london_qc_KueteMeli.pdf" }
+      { "label": "Slides", "href": "/files/dissertation/qc_london_KueteMeli.jpg" }
     ]
   },
   {
@@ -41,7 +41,7 @@
     "text": "I was honoured to give a talk titled “Quantum Binary Optimization” at the ECCV 2024 workshop on Quantum Computer Vision and Machine Learning (QCVML).",
     "links": [
       { "label": "QCVML", "href": "https://qcvml.github.io" },
-      { "label": "Slides", "href": "/files/qc_eccv2024_KueteMeli.pdf" }
+      { "label": "Slides", "href": "/files/talk3/qc_eccv2024_KueteMeli.pdf" }
     ]
   },
   {
@@ -57,7 +57,7 @@
     "text": "I gave a talk titled “Quantum Computing for Binary Optimization and Beyond: Bridging Classical and Quantum Landscapes” to the Computer Vision Group of the University of Siegen.",
     "links": [
       { "label": "Computer Vision Group", "href": "https://www.vsa.informatik.uni-siegen.de" },
-      { "label": "Slides", "href": "../files/qc_siegen_KueteMeli.pdf" }
+      { "label": "Slides", "href": "/files/talk1/qc_siegen_KueteMeli.pdf" }
     ]
   },
   {
