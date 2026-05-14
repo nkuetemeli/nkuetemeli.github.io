@@ -53,7 +53,7 @@
     "location": "London, UK",
     "summary": "Energy-based formulations of the image registration problem are notoriously non-convex and traditionally require a combination of various techniques to obtain a good solution. In this work, we explore how a recent result from quantum computing can help with this task. Specifically, we show how to apply Quantum Hamiltonian Descent to the image registration problem. Numerical simulations on real-world data show that the method allows to recover good global minima despite the strong non-convexity, without relying on any heuristics or meta-strategies for aiding the optimization.",
     "links": [
-      { "label": "Slides(coming soon)", "href": "#" }
+      { "label": "Slides", "href": "/files/talk4/london_qc_KueteMeli.pdf" }
     ]
   }
 ]

@@ -1,5 +1,9 @@
 [
   {
+    "date": "13.5.2026",
+    "text": "Proud to be selected as a Gold Reviewer for ICML 2026! This distinction places me among the top 25% of reviewers for this year’s conference."
+  },
+  {
     "date": "31.3.2026",
     "text": "Our paper “Quantum Hamiltonian Descent for Rigid Image Registration” got accepted at ICPR 2026",
     "links": [
@@ -18,7 +22,7 @@
     "date": "18.09.2025",
     "text": "I was honoured to give a talk in Prof. Tolga Birdal’s CIRCLE Group at Imperial College London.",
     "links": [
-      { "label": "Slides (coming soon)", "href": "#" }
+      { "label": "Slides", "href": "/files/london_qc_KueteMeli.pdf" }
     ]
   },
   {
