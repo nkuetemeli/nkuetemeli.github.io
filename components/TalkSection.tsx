@@ -119,8 +119,8 @@ const TalkSection: React.FC = () => {
                     className="px-4 py-2 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
                   >
                     {isExpanded
-                      ? 'Hide Abstract'
-                      : 'Show Abstract'}
+                      ? 'Hide Details'
+                      : 'Show Details'}
                   </button>
                 </div>
 
