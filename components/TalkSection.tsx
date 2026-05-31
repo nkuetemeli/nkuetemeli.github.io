@@ -34,14 +34,30 @@ const TalkSection: React.FC = () => {
 
   const sortedTalks = [...TalksData].sort(
     (a, b) =>
-      new Date(b.date).getTime() - new Date(a.date).getTime()
+      new Date(b.date).getTime() -
+      new Date(a.date).getTime()
+  );
+
+  const pinnedTalk = sortedTalks.find(
+    (talk) => talk.pinned
+  );
+
+  const regularTalks = sortedTalks.filter(
+    (talk) => !talk.pinned
   );
 
   const visibleTalks = showAll
     ? sortedTalks
-    : sortedTalks.slice(0, 3);
+    : pinnedTalk
+      ? [
+          ...regularTalks.slice(0, 2),
+          pinnedTalk,
+        ]
+      : sortedTalks.slice(0, 3);
 
-  const toggleAbstract = (permalink: string) => {
+  const toggleAbstract = (
+    permalink: string
+  ) => {
     setExpandedAbstracts((prev) => ({
       ...prev,
       [permalink]: !prev[permalink],
@@ -119,8 +135,8 @@ const TalkSection: React.FC = () => {
                     className="px-4 py-2 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white transition"
                   >
                     {isExpanded
-                      ? 'Hide Details'
-                      : 'Show Details'}
+                      ? 'Hide Abstract'
+                      : 'Show Abstract'}
                   </button>
                 </div>
 

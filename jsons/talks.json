@@ -53,6 +53,7 @@
     "date": "2024-04-27",
     "location": "University of Luebeck, Germany",
     "summary": "Talk for my Ph.D. thesis defense.",
+    "pinned": true,
     "links": [
       { "label": "Slides", "href": "/files/dissertation/qc_defense_KueteMeli.pdf" },
       { "label": "Dissertation", "href": "https://www.mic.uni-luebeck.de/fileadmin/mic/publications/2024/Dissertation_Natacha_Kuete_Meli_QuantumAlgorithmsForBinaryProblemsWithApplicationsToImageProcessing.pdf" }
