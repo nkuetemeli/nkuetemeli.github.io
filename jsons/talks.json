@@ -1,5 +1,21 @@
 [
   {
+    "id": 5,
+    "title": "Quantum Paradigm Shifts in Combinatorial Optimization and Learning",
+    "collection": "talks",
+    "type": "Talk",
+    "permalink": "/talks/talk-5",
+    "venue": "Bielefeld University, Chair for Visual AI for Extended Reality",
+    "date": "2026-05-26",
+    "location": "Bielefeld, Germany",
+    "summary": "Coming Soon",
+    "summary_": "How can quantum computation reshape the way we model and solve problems? In this talk, we examine two problem classes that are central in computer vision: combinatorial assignment problems, which are NP‑hard for classical computers, and learning models, whose more effective and efficient optimisation is always of interest.\nWe begin with adiabatic quantum computation, which provides effective heuristics for solving energy-based Quadratic Unconstrained Binary Optimization (QUBO) problems. Quadratic Assignment Problems (QAPs) arising for example in shape matching, however, do not naturally appear in QUBO form. We explore how QAPs can be translated into QUBO formulations by reviewing three quantum model constructions: Q‑Match, QuCOOP, and QuCM.\nIn contrast to these energy‑based approaches, interference‑driven methods exploit intrinsically quantum effects with broad potential for learning. Interference refers to structuring amplitudes in a superposition so that informative global patterns are amplified while irrelevant ones are suppressed. We explore an interference‑based quantum learning model inspired by the Bernstein–Vazirani algorithm. By placing labelled inputs in superposition and designing the interference basis, the model reveals hidden structure that informs the target objective, offering a paradigm that sidesteps the challenges of gradient‑based optimisation.",
+    "links": [
+      { "label": "Slides", "href": "#" },
+      { "label_": "Slides", "href": "/files/talk5/qc_london_KueteMeli.pdf" }
+    ]
+  },
+  {
     "id": 4,
     "title": "Quantum Hamiltonian Descent for Rigid Image Registration",
     "collection": "talks",
