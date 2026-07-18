@@ -1,11 +1,18 @@
 [
   {
+    "date": "30.6.2026",
+    "text": "I am organizing the <a href='https://www.gcpr-vmv.de/year/2026/program' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Women in Vision Workshop at GCPR 2026</a>."
+  },
+  {
     "date": "26.5.2026",
-    "text": "I made a three‑day research visit at Bielefeld University, hosted by the Chair for Visual AI for Extended Reality (Prof. Vladislav Golyanik), during which I delivered a talk on quantum optimization and learning."
+    "text": "I made a three‑day research visit at Bielefeld University, hosted by the Chair for Visual AI for Extended Reality (Prof. Vladislav Golyanik), during which I delivered a talk on quantum optimization and learning.",
+    "links": [
+      { "label": "Slides (coming soon)", "href": "#" }
+    ]
   },
   {
     "date": "13.5.2026",
-    "text": "Proud to be selected as a Gold Reviewer for ICML 2026! This distinction places me among the top 25% of reviewers for this year’s conference."
+    "text": "Proud to be selected as a <a href='https://icml.cc/Conferences/2026/ProgramCommittee#technical-reviewer' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Gold Reviewer for ICML 2026</a>! This distinction places me among the top 25% of reviewers for this year’s conference."
   },
   {
     "date": "31.3.2026",
