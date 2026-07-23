@@ -1,512 +1,146 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import {
-  GraduationCap,
-  Microscope,
-  Languages,
-  Users,
-  FileCheck,
-  Download,
-  Sparkles,
-} from "lucide-react";
-import CVData from "@/jsons/cv.json";
+import React from 'react';
+import { motion, Variants } from 'framer-motion';
+import CVData from '@/jsons/cv.json';
 
-
-type NodeType = {
-  id: string;
-  title: string;
-  icon: React.ElementType;
-  color: string;
-  position: string;
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 }
+  },
 };
 
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 10, scale: 0.95 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: 'easeOut' } }
+};
 
-const nodes: NodeType[] = [
-  {
-    id: "community",
-    title: "Community",
-    icon: Users,
-    color: "from-emerald-400 to-green-600",
-    position: "left-[28%] top-[5%]",
-  },
-  {
-    id: "education",
-    title: "Education",
-    icon: GraduationCap,
-    color: "from-indigo-500 to-violet-600",
-    position: "left-[12%] bottom-[18%]",
-  },
-  {
-    id: "experience",
-    title: "Academic Experience",
-    icon: Microscope,
-    color: "from-sky-400 to-cyan-600",
-    position: "left-[42%] top-[38%]",
-  },
-  {
-    id: "reviewer",
-    title: "Reviewer",
-    icon: FileCheck,
-    color: "from-fuchsia-500 to-pink-600",
-    position: "right-[15%] top-[18%]",
-  },
-  {
-    id: "languages",
-    title: "Languages",
-    icon: Languages,
-    color: "from-orange-400 to-amber-600",
-    position: "right-[22%] bottom-[18%]",
-  },
-];
+const ConciseCVCards: React.FC = () => {
+  return (
+    <section id="cv" className="bg-white py-20 sm:py-28">
+      <motion.div
+          className="container mx-auto px-6 lg:px-8 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: true, amount: 0.2}}
+          variants={containerVariants}
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+          My CV
+        </h2>
 
+        <motion.p className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-12">
+          My concise CV with education, experience, profile details, and reviewer activities.
+        </motion.p>
 
-export default function CVWorld() {
+        <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            variants={containerVariants}
+        >
+          {/* Education Card */}
+          <motion.div
+              variants={itemVariants}
+              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+          >
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Education</h3>
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {CVData.education.map(edu => (
+                  <li key={edu.key}>
+                    <span className="font-semibold">{edu.degree}</span> — {edu.field} <br/>
+                    <span className="text-gray-500">{edu.institution} • {edu.period}</span>
+                  </li>
+              ))}
+            </ul>
+          </motion.div>
 
-  const [selected,setSelected] = useState<string|null>(null);
+          {/* Work Experience Card */}
+          <motion.div
+              variants={itemVariants}
+              className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+          >
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Academic Experience</h3>
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {CVData.workExperience.map(work => (
+                  <li key={work.key}>
+                    <span className="font-semibold">{work.position}</span> <br/>
+                    <span className="text-gray-500">{work.institution} • {work.period}</span>
+                  </li>
+              ))}
+            </ul>
+          </motion.div>
 
+          {/* Profile Card (Languages + Engagements) */}
+            <motion.div
+                variants={itemVariants}
+                className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+            >
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Profile</h3>
 
-  const renderContent = () => {
-
-    switch(selected){
-
-      case "education":
-        return (
-          <div className="space-y-4">
-          {
-            CVData.education.map(e=>(
-              <div key={e.key}>
-                <b>{e.degree}</b>
-                <p className="text-sm text-gray-600">
-                  {e.field}
-                </p>
-                <p className="text-xs text-gray-400">
-                  {e.institution} • {e.period}
-                </p>
-              </div>
-            ))
-          }
-          </div>
-        );
-
-
-      case "experience":
-        return (
-          <div className="space-y-4">
-          {
-            CVData.workExperience.map(e=>(
-              <div key={e.key}>
-                <b>{e.position}</b>
-                <p className="text-sm text-gray-600">
-                  {e.institution}
-                </p>
-                <p className="text-xs text-gray-400">
-                  {e.period}
-                </p>
-              </div>
-            ))
-          }
-          </div>
-        );
+                {/* Languages */}
+                <div className="mb-4">
+                    <h4 className="font-semibold">Languages</h4>
+                    <ul className="space-y-2 text-gray-700 text-sm">
+                        {CVData.profile.languages.map(lang => (
+                            <li key={lang}>
+                                <span className="text-gray-500">{lang}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
 
-      case "languages":
-        return (
-          <div className="flex flex-wrap gap-2">
-          {
-            CVData.profile.languages.map(l=>(
-              <span
-              key={l}
-              className="
-              rounded-full
-              bg-orange-100
-              px-3 py-1
-              text-sm
-              "
+                {/* Engagements */}
+                <div className="mb-4">
+                    <h4 className="font-semibold">Engagements</h4>
+                    {CVData.profile.engagements.womenInVision.map((item, idx) => (
+                        <div key={`women-${idx}`}>
+                            <span className="text-gray-500">{item}</span>
+                        </div>
+                    ))}
+                </div>
+                <div className="mb-4">
+                    <h4 className="font-semibold">Volunteer</h4>
+                    {CVData.profile.engagements.volunteer.map((item, idx) => (
+                        <div key={`volunteer-${idx}`}>
+                            <span className="text-gray-500">{item}</span>
+                        </div>
+                    ))}
+                </div>
+            </motion.div>
+
+
+            {/* Reviewer Activities Card */}
+            <motion.div
+                variants={itemVariants}
+                className="bg-indigo-50 p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 text-left"
+            >
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Reviewer Activities</h3>
+                <div className="flex flex-wrap gap-2">
+                {CVData.reviewerActivities.map((rev, idx) => (
+                  <span key={idx} className="bg-indigo-100 text-indigo-700 font-medium text-xs px-3 py-1 rounded-full">
+                    {rev}
+                  </span>
+              ))}
+            </div>
+          </motion.div>
+        </motion.div>
+
+        {/* Optional Download Button */}
+        {CVData.download && (
+            <motion.div variants={itemVariants} className="text-center mt-12">
+              <a
+                  href={CVData.download.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition-colors"
               >
-                {l}
-              </span>
-            ))
-          }
-          </div>
-        );
-
-
-      case "reviewer":
-        return (
-          <div className="flex flex-wrap gap-2">
-          {
-            CVData.reviewerActivities.map(r=>(
-              <span
-              key={r}
-              className="
-              rounded-full
-              bg-indigo-100
-              px-3 py-1
-              text-sm
-              "
-              >
-                {r}
-              </span>
-            ))
-          }
-          </div>
-        );
-
-
-      case "community":
-        return (
-          <div className="space-y-4 text-sm">
-            {
-              CVData.profile.engagements.womenInVision.map(i=>
-                <p key={i}>{i}</p>
-              )
-            }
-
-            {
-              CVData.profile.engagements.volunteer.map(i=>
-                <p key={i}>{i}</p>
-              )
-            }
-          </div>
-        );
-
-
-      default:
-        return null;
-    }
-  };
-
-
-
-return (
-
-<section
-id="cv"
-className="
-relative
-overflow-hidden
-bg-gradient-to-b
-from-indigo-50
-via-white
-to-white
-py-16
-"
->
-
-
-<div className="
-absolute
-left-0
-top-0
-h-72
-w-72
-rounded-full
-bg-indigo-200/30
-blur-3xl
-"/>
-
-
-<div className="container mx-auto px-6">
-
-
-<h2 className="
-text-center
-text-4xl
-font-bold
-">
-My Journey
-</h2>
-
-
-<p className="
-mx-auto
-mt-3
-max-w-xl
-text-center
-text-gray-600
-">
-A visual map of my academic profile and activities.
-</p>
-
-
-
-<div
-className="
-relative
-mx-auto
-mt-10
-hidden
-h-[420px]
-max-w-4xl
-lg:block
-"
->
-
-
-{/* connections */}
-
-<svg
-className="
-absolute
-inset-0
-h-full
-w-full
-"
->
-
-<path
-d="
-M50% 50%
-C40% 30%,30% 20%,25% 10%
-M50% 50%
-C25% 60%,20% 70%,15% 80%
-M50% 50%
-C75% 30%,85% 20%,90% 15%
-M50% 50%
-C70% 70%,80% 80%,85% 85%
-"
-stroke="#c7d2fe"
-strokeWidth="1"
-fill="none"
-/>
-
-</svg>
-
-
-
-{/* center */}
-
-<motion.div
-animate={{
-scale:[1,1.05,1]
-}}
-transition={{
-duration:4,
-repeat:Infinity
-}}
-className="
-absolute
-left-1/2
-top-1/2
--translate-x-1/2
--translate-y-1/2
-flex
-h-28
-w-28
-flex-col
-items-center
-justify-center
-rounded-full
-bg-gradient-to-br
-from-indigo-600
-to-blue-500
-text-white
-shadow-2xl
-"
->
-
-<Sparkles size={25}/>
-
-<span className="mt-2 text-xs font-bold text-center">
-Research
-<br/>
-Profile
-</span>
-
-</motion.div>
-
-
-
-{
-nodes.map((node,index)=>{
-
-const Icon=node.icon;
-
-return (
-
-<motion.button
-key={node.id}
-className={`
-absolute
-${node.position}
-`}
-onClick={()=>setSelected(node.id)}
-initial={{opacity:0,scale:.7}}
-whileInView={{
-opacity:1,
-scale:1
-}}
-transition={{
-delay:index*.1
-}}
-whileHover={{
-scale:1.12
-}}
-animate={{
-y:[0,-5,0]
-}}
->
-
-<div
-className={`
-h-24
-w-24
-rounded-full
-bg-gradient-to-br
-${node.color}
-text-white
-shadow-xl
-flex
-flex-col
-items-center
-justify-center
-`}
->
-
-<Icon size={24}/>
-
-<span
-className="
-mt-2
-px-2
-text-center
-text-[11px]
-font-semibold
-"
->
-{node.title}
-</span>
-
-</div>
-
-
-</motion.button>
-
-)
-
-})
-}
-
-
-
-<AnimatePresence>
-
-{
-selected &&
-
-<motion.div
-
-initial={{
-opacity:0,
-scale:.9
-}}
-
-animate={{
-opacity:1,
-scale:1
-}}
-
-exit={{
-opacity:0,
-scale:.9
-}}
-
-className="
-absolute
-left-1/2
-top-1/2
-z-20
-w-[340px]
--translate-x-1/2
--translate-y-1/2
-rounded-3xl
-bg-white/90
-p-6
-shadow-2xl
-backdrop-blur-xl
-"
-
->
-
-<button
-onClick={()=>setSelected(null)}
-className="
-absolute
-right-4
-top-3
-text-gray-400
-"
->
-×
-</button>
-
-
-<h3 className="
-mb-5
-text-xl
-font-bold
-"
->
-{
-nodes.find(n=>n.id===selected)?.title
-}
-</h3>
-
-
-{renderContent()}
-
-
-</motion.div>
-
-}
-
-</AnimatePresence>
-
-
-</div>
-
-
-
-{
-CVData.download &&
-
-<div className="mt-8 flex justify-center">
-
-<motion.a
-whileHover={{scale:1.05}}
-href={CVData.download.url}
-target="_blank"
-rel="noreferrer"
-className="
-flex
-items-center
-gap-2
-rounded-full
-bg-indigo-600
-px-7
-py-3
-text-white
-shadow-lg
-"
->
-
-<Download size={17}/>
-
-{CVData.download.label}
-
-</motion.a>
-
-</div>
-
-}
-
-
-
-</div>
-
-
-</section>
-
-);
-
-}
+                {CVData.download.label}
+              </a>
+            </motion.div>
+        )}
+      </motion.div>
+    </section>
+  );
+};
+
+export default ConciseCVCards;
