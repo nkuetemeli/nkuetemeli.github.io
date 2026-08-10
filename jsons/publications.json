@@ -26,7 +26,7 @@
     "venue": "International Conference on 3D Vision (3DV)",
     "paperurl": "https://arxiv.org/pdf/2603.20024",
     "teaser": "/files/paper5/paper5_banner.png",
-    "poster": [
+    "posters": [
       "/files/paper5/paper5_poster1.pdf"
     ],
     "authors": "<b>Natacha Kuete Meli</b>, Jovita Lukasik, Vladislav Golyanik, Michael Moeller",
@@ -44,7 +44,7 @@
     "venue": "International Conference on 3D Vision (3DV)",
     "paperurl": "https://arxiv.org/pdf/2602.10115",
     "teaser": "/files/paper4/paper4_banner.png",
-    "poster": [
+    "posters": [
       "/files/paper4/paper4_poster1.pdf"
     ],
     "authors": "Shuteng Wang, <b>Natacha Kuete Meli</b>, Michael Möller, Vladislav Golyanik",
