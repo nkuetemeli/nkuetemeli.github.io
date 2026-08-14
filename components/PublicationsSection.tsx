@@ -57,12 +57,14 @@ const PublicationsSection: React.FC = () => {
                 variants={itemVariants}
                 className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6"
             >
-              Featured publications.
+              Here are some of my recent publications.
             </motion.p>
           </div>
 
             {/* Featured Publications */}
             {featuredPublications.length > 0 && (
+              <div className="featured-section">
+                <span className="featured-tag">Featured</span>
                 <motion.ul
                     variants={itemVariants}
                     className="max-w-2xl mx-auto mb-12 text-left space-y-3 border-l-4 border-indigo-600 pl-6"
@@ -130,6 +132,7 @@ const PublicationsSection: React.FC = () => {
                       </li>
                   ))}
                 </motion.ul>
+              </div>
             )}
 
           {/* Publications Grid */}
