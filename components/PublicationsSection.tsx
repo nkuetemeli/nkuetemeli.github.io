@@ -36,7 +36,7 @@ const PublicationsSection: React.FC = () => {
     : sortedPublications.slice(0, 3);
 
   return (
-      <section id="publications">
+      <section id="publications" className="bg-gray-50 py-20 sm:py-28">
         <motion.div
             className="container mx-auto px-6 lg:px-8 text-center"
             initial="hidden"
