@@ -57,7 +57,7 @@ const PublicationsSection: React.FC = () => {
                 variants={itemVariants}
                 className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6"
             >
-              Here are some of my recent publications.
+              Featured publications.
             </motion.p>
           </div>
 
@@ -65,7 +65,7 @@ const PublicationsSection: React.FC = () => {
             {featuredPublications.length > 0 && (
                 <motion.ul
                     variants={itemVariants}
-                    className="max-w-2xl mx-auto mb-12 text-left space-y-3"
+                    className="max-w-2xl mx-auto mb-12 text-left space-y-3 border-l-4 border-indigo-600 pl-6"
                 >
                   {featuredPublications.map((pub) => (
                       <li key={pub.permalink}>
@@ -132,9 +132,9 @@ const PublicationsSection: React.FC = () => {
                 </motion.ul>
             )}
 
-            {/* Publications Grid */}
-            <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          {/* Publications Grid */}
+          <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 layout
                 variants={containerVariants}
             >
