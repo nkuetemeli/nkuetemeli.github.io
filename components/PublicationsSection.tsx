@@ -63,7 +63,7 @@ const PublicationsSection: React.FC = () => {
 
             {/* Featured Publications */}
             {featuredPublications.length > 0 && (
-                <div className="max-w-2xl mx-auto mb-12 border-l-4 border-indigo-600 pl-6 text-left">
+                <div className="featured-section">
                   <div className="mb-3">
                     <span className="bg-indigo-600 text-white text-xs px-2 py-1 rounded-full shadow">
                       Featured
