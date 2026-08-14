@@ -63,12 +63,13 @@ const PublicationsSection: React.FC = () => {
 
             {/* Featured Publications */}
             {featuredPublications.length > 0 && (
-                <div className="featured-section">
+                <div className="max-w-2xl mx-auto mb-12 border-l-4 border-indigo-600 pl-6 text-left">
                   <div className="mb-3">
                     <span className="bg-indigo-600 text-white text-xs px-2 py-1 rounded-full shadow">
                       Featured
                     </span>
                   </div>
+
                   <motion.ul
                       variants={itemVariants}
                       className="max-w-2xl mx-auto mb-12 text-left space-y-3 border-l-4 border-indigo-600 pl-6"
@@ -143,8 +144,8 @@ const PublicationsSection: React.FC = () => {
           <motion.div
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
               layout
-                variants={containerVariants}
-            >
+              variants={containerVariants}
+          >
               {visiblePublications.map((pub) => {
                 const isFeatured = pub.featured;
 
