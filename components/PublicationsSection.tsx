@@ -63,82 +63,86 @@ const PublicationsSection: React.FC = () => {
 
             {/* Featured Publications */}
             {featuredPublications.length > 0 && (
-              <div className="featured-section">
-                <span className="featured-tag">Featured</span>
-                <motion.ul
-                    variants={itemVariants}
-                    className="max-w-2xl mx-auto mb-12 text-left space-y-3 border-l-4 border-indigo-600 pl-6"
-                >
-                  {featuredPublications.map((pub) => (
-                      <li key={pub.permalink}>
-                        <a
-                            href={pub.paperurl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-indigo-700 font-medium hover:underline"
-                        >
+                <div className="featured-section">
+                  <div className="flex justify-start mb-3">
+                    <span className="bg-indigo-600 text-white text-xs px-2 py-1 rounded-full shadow">
+                      Featured
+                    </span>
+                  </div>
+                  <motion.ul
+                      variants={itemVariants}
+                      className="max-w-2xl mx-auto mb-12 text-left space-y-3 border-l-4 border-indigo-600 pl-6"
+                  >
+                    {featuredPublications.map((pub) => (
+                        <li key={pub.permalink}>
+                          <a
+                              href={pub.paperurl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-indigo-700 font-medium hover:underline"
+                          >
                   <span className="text-gray-800 font-medium">
                     {pub.title}
                   </span>
-                        </a>
+                          </a>
 
-                        <div className="inline-flex flex-wrap gap-2 ml-2 text-sm">
-                          {pub.project && (
-                              <a
-                                  href={pub.project}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-indigo-700 font-medium hover:underline"
-                              >
-                                Project
-                              </a>
-                          )}
+                          <div className="inline-flex flex-wrap gap-2 ml-2 text-sm">
+                            {pub.project && (
+                                <a
+                                    href={pub.project}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-indigo-700 font-medium hover:underline"
+                                >
+                                  Project
+                                </a>
+                            )}
 
-                          {pub.arxiv && (
-                              <a
-                                  href={pub.arxiv}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-indigo-700 font-medium hover:underline"
-                              >
-                                arXiv
-                              </a>
-                          )}
+                            {pub.arxiv && (
+                                <a
+                                    href={pub.arxiv}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-indigo-700 font-medium hover:underline"
+                                >
+                                  arXiv
+                                </a>
+                            )}
 
-                          {pub.code && (
-                              <a
-                                  href={pub.code}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-indigo-700 font-medium hover:underline"
-                              >
-                                Code
-                              </a>
-                          )}
+                            {pub.code && (
+                                <a
+                                    href={pub.code}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-indigo-700 font-medium hover:underline"
+                                >
+                                  Code
+                                </a>
+                            )}
 
-                          {/* All posters */}
-                          {pub.posters?.map((poster: string, index: number) => (
-                              <a
-                                  key={poster}
-                                  href={poster}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-indigo-700 font-medium hover:underline"
-                              >
-                                Poster{pub.posters.length > 1 ? ` ${index + 1}` : ''}
-                              </a>
-                          ))}
-                        </div>
-                      </li>
-                  ))}
-                </motion.ul>
-              </div>
+                            {/* All posters */}
+                            {pub.posters?.map((poster: string, index: number) => (
+                                <a
+                                    key={poster}
+                                    href={poster}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-indigo-700 font-medium hover:underline"
+                                >
+                                  Poster{pub.posters.length > 1 ? ` ${index + 1}` : ''}
+                                </a>
+                            ))}
+                          </div>
+                        </li>
+                    ))}
+                  </motion.ul>
+                </div>
             )}
 
           {/* Publications Grid */}
           <motion.div
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-                layout
+              layout
                 variants={containerVariants}
             >
               {visiblePublications.map((pub) => {
