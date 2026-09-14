@@ -1,5 +1,19 @@
 [
   {
+    "id": 6,
+    "title": "Quantum-enhanced Computer Vision: Going Beyond Classical Algorithms",
+    "collection": "talks",
+    "type": "Talk",
+    "permalink": "/talks/talk-6",
+    "venue": "QCVML Workshop @ ECCV 2026",
+    "date": "2026-09-09",
+    "location": "Malmö, Sweden",
+    "summary": "Quantum computing has attracted growing interest in computer vision, promising new computational paradigms for optimization, learning, and probabilistic inference, and giving rise to the emerging field of quantum-enhanced computer vision (QeCV). <br> This talk provides an accessible overview of the current landscape of QeCV, covering its foundations, recent advances, emerging research directions, and limitations.\n\nWe begin by motivating the use of quantum computing for computer vision and reviewing recent algorithmic advances, as well as realistic hardware and development timelines. We then introduce the fundamental principles of quantum computing, contrasting gate-based and adiabatic paradigms, and discuss their relevance for vision applications, along with practical software tools and programming frameworks available to the community. Finally, we survey emerging application areas, including combinatorial optimization, continuous neural representations, and probabilistic generative models based on quantum sampling. We conclude with a brief discussion of current challenges, including hardware limitations, data encoding, and trainability. Overall, the talk provides researchers with a balanced perspective on the current state of QeCV and its future research opportunities.",
+    "links": [
+      { "labe_": "Slides", "href": "/files/talk6/qc_eccv2026_KueteMeli.pdf" }
+    ]
+  },
+  {
     "id": 5,
     "title": "Quantum Paradigm Shifts in Combinatorial Optimization and Learning",
     "collection": "talks",
@@ -12,7 +26,7 @@
     "summary_": "How can quantum computation reshape the way we model and solve problems? In this talk, we examine two problem classes that are central in computer vision: combinatorial assignment problems, which are NP‑hard for classical computers, and learning models, whose more effective and efficient optimisation is always of interest.\nWe begin with adiabatic quantum computation, which provides effective heuristics for solving energy-based Quadratic Unconstrained Binary Optimization (QUBO) problems. Quadratic Assignment Problems (QAPs) arising for example in shape matching, however, do not naturally appear in QUBO form. We explore how QAPs can be translated into QUBO formulations by reviewing three quantum model constructions: Q‑Match, QuCOOP, and QuCM.\nIn contrast to these energy‑based approaches, interference‑driven methods exploit intrinsically quantum effects with broad potential for learning. Interference refers to structuring amplitudes in a superposition so that informative global patterns are amplified while irrelevant ones are suppressed. We explore an interference‑based quantum learning model inspired by the Bernstein–Vazirani algorithm. By placing labelled inputs in superposition and designing the interference basis, the model reveals hidden structure that informs the target objective, offering a paradigm that sidesteps the challenges of gradient‑based optimisation.",
     "links": [
       { "label": "Slides", "href": "#" },
-      { "label_": "Slides", "href": "/files/talk5/qc_london_KueteMeli.pdf" }
+      { "label_": "Slides", "href": "/files/talk5/qc_bielefeld_KueteMeli.pdf" }
     ]
   },
   {

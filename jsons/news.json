@@ -1,5 +1,12 @@
 [
   {
+    "date": "9.9.2026",
+    "text": "I was honoured to give a tutorial at the <a href='https://qcvml.github.io' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>3rd edition of the QCVML Worshop</a> at ECCV 2026 in Malmö!",
+     "links": [
+      { "label": "Slides", "href": "/files/talk6/qc_eccv2026_KueteMeli.pdf" }
+    ]
+  },
+  {
     "date": "26.7.2026",
     "text": "Proud to be awarded an <a href='https://eccv.ecva.net/Conferences/2026/ProgramCommittee' target='_blank' rel='noopener noreferrer' class='text-indigo-600 hover:underline font-medium'>Outstanding Reviewer for ECCV 2026</a>! This award acknowledges timely and exceptionally high-quality reviews submitted in support of the peer-review process."
   },
