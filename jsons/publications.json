@@ -1,5 +1,19 @@
 [
   {
+    "id": 7,
+    "title": "Quantum Hamiltonian Descent for Rigid Image Registration",
+    "permalink": "/publication/paper-title-number-7",
+    "excerpt": "Johannes David Voigts, **Natacha Kuete Meli**, Jan Lellmann",
+    "date": "2026-08-03",
+    "venue": "International Conference on Pattern Recognition (ICPR)",
+    "paperurl": "https://doi.org/10.1007/978-3-032-31452-9_10",
+    "teaser": "/files/paper7/paper7_banner.png",
+    "authors": "Johannes David Voigts, <b>Natacha Kuete Meli</b>, Jan Lellmann",
+    "arxiv": "https://arxiv.org/pdf/2510.07317?",
+    "bibtex": true,
+    "featured": true
+  },
+  {
     "id": 6,
     "title": "Quantum-enhanced Computer Vision: Going Beyond Classical Algorithms",
     "permalink": "/publication/paper-title-number-6",
