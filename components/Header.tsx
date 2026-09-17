@@ -12,7 +12,7 @@ const navLinks = [
   { name: "CV", href: "#cv" }
 ];
 
-const EMAIL = "natacha.kuete-meli@uni-siegen.de";
+const EMAIL = "natacha.kuetemeli@uni-siegen.de";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
